@@ -16,18 +16,18 @@ Some of these ideas are published here:
 	* Lists by Declaration {{label "info" "In Progress"}}
 * **Improve Performance**
 	* Editor Improvements
-	* Concatenate all files into a single .js file (only one request to the server, therefore much faster loading time)
+	* Concatenate all files into a single .js file (only one request to the server, therefore much faster loading time)  {{label "info" "In Progress"}}
 * **UI Controls / UI-Components**
 	* Accordion
 	* Buttons {{label "info" "In Progress"}}
 	* ~~Alert~~ (no need for a component, can be achieved by using only Html/CSS)
 	* Collapse
-	* Dropdown/Select
-	* Progressbar
+	* Dropdown/Select {{label "warning" "Postponed"}}
+	* Progressbar {{label "success" "Done"}}
 	* Range Slider / Slider {{label "success" "Done"}}
-	* Pagination
-	* Timepicker
-	* Datepicker
+	* Pagination {{label "warning" "Postponed"}}
+	* Timepicker {{label "warning" "Postponed"}}
+	* Datepicker {{label "warning" "Postponed"}}
 * **Component Improvements**
 	* `wi-action` {{label "success" "Done"}}
 		* Multiple Actions {{label "success" "Done"}}
@@ -40,6 +40,8 @@ Some of these ideas are published here:
 		* Finish Video embedding
 	* `wi-tab`
 		* Extend feature-richness of `wiTab` (vertical tabs, styling, etc.) {{label "info" "In Progress"}}
+	* `wi-progressbar`
+		* Add additional configuration options
 * **Editor Improvements (Prio B):**
 	* Resize Editors
 	* Better Code-Snippet support
