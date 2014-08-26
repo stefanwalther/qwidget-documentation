@@ -5,8 +5,31 @@ title: Download
 
 
 ## Latest Version
+* **Version 0.10.0**
+* **Date:** 2014-08-26
+* **Tested On:**
+	* Qlik Sense Version/Desktop: 0.96
+	* QlikView.Next Server: 0.95
+	* Browser: Chrome + Internet Explorer 11
+* **Download:** [qWidget_0.10.00.zip](download/qWidget_0.10.00.zip)
+* **New Features**:
+	* **New Components**:
+		* `wiProgressbar`
+	* **Snippets**:
+		* Snippets for adding a progressbar
+		* Snippet for using the shorthand notation for binding to a HyperCube
+	* **Documentation**
+		* All changes described above
+		* Rebuild documentation for allowing deep-linking to specific pages
 
-* **Version 0.9.03**
+
+
+-----
+
+
+## Change Log
+
+### Version 0.9.03
 * **Date:** 2014-08-07
 * **Tested On:**
 	* Qlik Sense Version/Desktop: 0.96
@@ -28,12 +51,6 @@ title: Download
 	* Better user experience when filtering qWidgets from a repository
 * **Post-Build Fixes:**
 	* 0.9.03: Added backwards compatibility for gotoSheet
-
-
------
-
-
-## Change Log
 
 ### Version 0.8.00
 * **Date:** 2014-08-04
