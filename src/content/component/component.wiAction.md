@@ -22,7 +22,7 @@ If the user clicks on the element the last selection in the current app will be 
 Multiple actions triggered by the same event can be defined by delimiting the actions with a semicolon (`;`).
 
     <ANY
-		wi-action="field.selectAlternative('Dim1',true);field.lock('Dim1')"
+		wi-action="field.selectAlternative('Dim1',true);field.lock('Dim1')">
     </ANY>
 
 First select the alternatives in the field Dim1, then locks the selections in field Dim1. 
@@ -53,15 +53,15 @@ Action					| Description
 Action							| Description								
 -------------------------------	| -------------------------------  
 **`field.clear`**				| Clear a field selection.<br/><br/>**Parameter:**<br/>`name` - Name of the field<br/><br/>**Example:**<br/>`wi-action="field.clear('Dim1')"`
-**`field.clearOther`**			| Clear all fields except the selected one.<br/><br/>**Parameter:**<br/>`name` - Name of the field<br/>`softlock` - <br/><br/>**Example:**<br/>`wi-action="field.clearOther('Dim1', true)"`
+**`field.clearOther`**			| Clear all fields except the selected one.<br/><br/>**Parameter:**<br/>`name` - Name of the field<br/>`softlock` - If `true`, locked selections can be overridden.<br/><br/>**Example:**<br/>`wi-action="field.clearOther('Dim1', true)"`
 **`field.lock`**				| Lock a field selection.<br/><br/>**Parameter:**<br/>`name` - Name of the field.<br/><br/>**Example:**<br/>`wi-action="field.lock('Dim1')"`
-**`field.select`**				| Select field values.<br/><br/>**Parameters:**<br/>`name` - Name of the field<br/>`values` - Array of values to select<br/>`toggle` - Enable/disable toggling<br/>`softlock` - <br/><br/>**Example:**<br/>`wi-action="field.select('Dim1', [1,2,3], true, false)"`
-**`field.selectAll`**			| Select all values in a field.<br/><br/>**Parameters:**<br/>`name` - Name of the field<br/>`softlock` - <br/><br/>**Example:**<br/>`wi-action="field.selectAll('Dim1', true)"`
-**`field.selectAlternative`**	| Select alternative values in a field (***Bug in 0.96, not working***).<br/><br/>**Parameters:**<br/>`name` - Name of the field<br/>`softlock` - (Boolean)<br/><br/>**Example:**<br/>`wi-action="field.selectAlternative('Dim1', true)"`	
-**`field.selectExcluded`**		| Select excluded values in a field.<br/><br/>**Parameters:**<br/>`name` - Name of the field.<br/>`softlock` - ...<br/><br/>**Example:**<br/>`wi-action="field.selectExcluded('Dim1', true)"`
-**`field.selectMatch`**			| Select matching field values.<br/><br/>**Parameters:**<br/>`name` - Name of the field<br/>`match` - Match string<br/>`softlock` - <br/><br/>**Examples:**<br/>`wi-action="field.selectMatch('Dim1', 'A', true)"`<br/>`wi-action="field.selectMatch('Customer', 'A*', true)"` 
-**`field.selectPossible`**		| Select possible values in a field.<br/><br/>**Parameters:**<br/>`name` - Name of the field.<br/>`softlock` - <br/><br/>**Example:**<br/>`wi-action="field.selectPossible('Dim1', true')"`
-**`field.toggleSelect`**		| Toggle a field selection.<br/><br/>**Parameters:**<br/>`name` - Name of the field.<br/>`match` - Match string.<br/>`softlock` - ...<br/><br/>**Example:**<br/>`wi-action="field.toggleSelect('Dim1', 'A', true)"`
+**`field.select`**				| Select field values.<br/><br/>**Parameters:**<br/>`name` - Name of the field<br/>`values` - Array of values to select<br/>`toggle` - Enable/disable toggling<br/>`softlock` - If `true`, locked selections can be overridden.<br/><br/>**Example:**<br/>`wi-action="field.select('Dim1', [1,2,3], true, false)"`
+**`field.selectAll`**			| Select all values in a field.<br/><br/>**Parameters:**<br/>`name` - Name of the field<br/>`softlock` - If `true`, locked selections can be overridden.<br/><br/>**Example:**<br/>`wi-action="field.selectAll('Dim1', true)"`
+**`field.selectAlternative`**	| Select alternative values in a field (***Bug in 0.96, not working***).<br/><br/>**Parameters:**<br/>`name` - Name of the field<br/>`softlock` - If `true`, locked selections can be overridden.<br/><br/>**Example:**<br/>`wi-action="field.selectAlternative('Dim1', true)"`	
+**`field.selectExcluded`**		| Select excluded values in a field.<br/><br/>**Parameters:**<br/>`name` - Name of the field.<br/>`softlock` - If `true`, locked selections can be overridden.<br/><br/>**Example:**<br/>`wi-action="field.selectExcluded('Dim1', true)"`
+**`field.selectMatch`**			| Select matching field values.<br/><br/>**Parameters:**<br/>`name` - Name of the field<br/>`match` - Match string<br/>`softlock` - If `true`, locked selections can be overridden.<br/><br/>**Examples:**<br/>`wi-action="field.selectMatch('Dim1', 'A', true)"`<br/>`wi-action="field.selectMatch('Customer', 'A*', true)"` 
+**`field.selectPossible`**		| Select possible values in a field.<br/><br/>**Parameters:**<br/>`name` - Name of the field.<br/>`softlock` - If `true`, locked selections can be overridden.<br/><br/>**Example:**<br/>`wi-action="field.selectPossible('Dim1', true')"`
+**`field.toggleSelect`**		| Toggle a field selection.<br/><br/>**Parameters:**<br/>`name` - Name of the field.<br/>`match` - Match string.<br/>`softlock` - If `true`, locked selections can be overridden.<br/><br/>**Example:**<br/>`wi-action="field.toggleSelect('Dim1', 'A', true)"`
 **`field.unlock`**				| Unlock a field selection.<br/><br/>**Parameter:**<br/>`name` - Name of the field.<br/><br/>**Example:**<br/>`wi-action="field.unlock('Dim1')"`
 
 
@@ -71,7 +71,7 @@ Action					| Description
 -----------------------	| -------------------------------  
 **`nextSheet`**			| Go to the next sheet (**experimental**)
 **`prevSheet`**			| Go to the previous sheet (**experimental**)
-**`gotoSheet`**			| Go to a sheet with the given Id<br/><br/>**Parameters:**<br/>`id` - Id of the sheet<br/>`useQlikView` - Hack for backwards compatibility to allow gotoSheet also in QlikView.Next Server 0.95; `true` or `false` (Defaults: `false`)<br/><br/>**Example:**<br/>`wi-action="gotoSheet('zBIAzG')"`
+**`gotoSheet`**			| Go to a sheet with the given Id<br/><br/>**Parameters:**<br/>`id` - Id of the sheet<br/>`useQlikView` - Hack for backwards compatibility to allow gotoSheet also in QlikView.Next Server 0.95; `true` or `false` (Defaults: `false`) {{label "danger" "Deprecated in version 0.11 or higher"}}<br/><br/>**Example:**<br/>`wi-action="gotoSheet('zBIAzG')"`
 
 
 ### Variables

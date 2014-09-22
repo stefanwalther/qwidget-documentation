@@ -161,17 +161,37 @@ module.exports = function( grunt ) {
 
         htmlmin: {
             all: {
-               options: {
-                   removeComments: true,
-                   collapseWhitespace: true,
-                   trace: false
-               },
-                files: [{
-                    expand: true,
-                    cwd: 'build',
-                    src: ['*.html'],
-                    dest: 'build'
-                }]
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    trace: false
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'build',
+                        src: ['*.html'],
+                        dest: 'build'
+                    }
+                ]
+            }
+        },
+
+        wkhtmltopdf: {
+            dev: {
+                src: 'build/*.html',
+                dest: 'build/pdf/'
+            }
+        },
+
+        compress: {
+            pdf: {
+                options: {
+                    archive: 'build/download/qWidget_documentation_pdf_v<%=site.meta.version%>.zip'
+                },
+                files: [
+                    {src: ['build/pdf/*.pdf'], dest: 'internal_folder/', filter: 'isFile'}
+                ]
             }
         }
 
@@ -184,6 +204,8 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-wkhtmltopdf');
 
 
 //  grunt.registerTask('server', [
@@ -201,6 +223,9 @@ module.exports = function( grunt ) {
         'copy:downloads',
         'less:build',
         'htmlmin',
+
+        'wkhtmltopdf',
+
         'connect',
         'watch'
 
@@ -208,6 +233,12 @@ module.exports = function( grunt ) {
 
     grunt.registerTask('default', [
         'build'
+    ]);
+
+    // Has to be called separately since I have no idea how to get a callback when generating the
+    // PDFs is successful.
+    grunt.registerTask('createPdfZip', [
+       'compress:pdf'
     ]);
 
 };

@@ -14,15 +14,13 @@ title: wiLinkedObject Component
 
 ***Result:***
 
-![](img/component_wiLinkedObject_BasicExample.png)
+> ![](img/component_wiLinkedObject_BasicExample.png)
 
 ## Linking Qlik Sense Objects
 
 | Property					| Description
 | :--------------------		| :--------------------------------------------------
 | **`type`**				| Should be `qs` for embedding Qlik Sense objects.<br/><br/>***Default:*** `type="qs"`
-| **`document`**			| **Not supported yet**, in future releases you'll be able to embed also objects from other apps.
-| **`transferSelections`**	| **Not supported yet**. true or false (true by default) to transfer selections to the other document.
 | **`object`**				| The object id.<br/><br/>***Tip:*** For demonstration purposes you can also use `object="random"`, then any random object from the current app will be taken.
 
 ### Where to Place Objects?

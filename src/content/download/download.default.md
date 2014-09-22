@@ -4,8 +4,31 @@ title: Download
 ---
 
 
-## Latest Version
-* **Version 0.10.0**
+## Qlik Sense 1.0 Build
+
+* **Version 0.11.01**
+* **Date:** 2014-09-22
+* **Tested On:**
+	* Qlik Sense Version: 1.0
+	* Qlik Sense Server: 1.0
+	* Browser: Chrome + Internet Explorer 11
+* **Download:** [qWidget_0.11.01.zip](download/qWidget_0.11.01.zip)
+
+
+-----
+
+
+## Change Log
+
+### **Version 0.11.00**
+* **Date:** 2014-09-04
+* **Tested On:**
+	* Qlik Sense Version: 0.97 (Build Nr. 634)
+	* Qlik Sense Server: Should work on Qlik Sense Server (Build Nr. 634), but could unfortunately not test it, didn't get the server up and running ... ;-(
+	* Browser: Chrome + Internet Explorer 11
+* **Download:** [qWidget_0.11.00.zip](download/qWidget_0.11.00.zip)
+
+### **Version 0.10.0**
 * **Date:** 2014-08-26
 * **Tested On:**
 	* Qlik Sense Version/Desktop: 0.96
@@ -20,14 +43,7 @@ title: Download
 		* Snippet for using the shorthand notation for binding to a HyperCube
 	* **Documentation**
 		* All changes described above
-		* Rebuild documentation for allowing deep-linking to specific pages
-
-
-
------
-
-
-## Change Log
+		* Rebuild documentation for allowing deep-linking to specific page
 
 ### Version 0.9.03
 * **Date:** 2014-08-07

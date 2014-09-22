@@ -8,6 +8,8 @@ title: Useful Resources
 
 ## Bootstrap
 * **Bootstrap Classes Cheat Sheet**: http://www.cheatography.com/hamburg/cheat-sheets/optional-and-official-bootstrap-classes-v3-2x/
+* **Excellent list of Bootstrap resources**: http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources
+* **Resources for Bootstrap**: http://bootsnipp.com/resources
 
 ## CSS Snippets
 
