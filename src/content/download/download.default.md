@@ -6,19 +6,31 @@ title: Download
 
 ## Qlik Sense 1.0 Build
 
-* **Version 0.11.01**
-* **Date:** 2014-09-22
+* **Version 0.11.03**
+* **Date:** 2014-10-06
 * **Tested On:**
 	* Qlik Sense Version: 1.0
 	* Qlik Sense Server: 1.0
 	* Browser: Chrome + Internet Explorer 11
-* **Download:** [qWidget_0.11.01.zip](download/qWidget_0.11.01.zip)
+* **Download:** [qWidget_0.11.03.zip](download/qWidget_0.11.03.zip)
 
 
 -----
 
 
 ## Change Log
+
+### **Version 0.11.03**
+Date: 2014-10-06
+* **Bugfixes:**
+    * Several minor bugfixes for Qlik Sense Server 1.0
+    * On the Qlik Sense Server assets from local repository couldn't be loaded (.less is not an allowed media-type)
+    * New qWidget couldn't be saved
+    * Prevent calling the qWidget-Webservice in View-Mode
+
+### **Version 0.11.01**
+Date: 2014-09-22
+* Several Bugfixes for Qlik Sense Server 1.0
 
 ### **Version 0.11.00**
 * **Date:** 2014-09-04
@@ -29,7 +41,7 @@ title: Download
 * **Download:** [qWidget_0.11.00.zip](download/qWidget_0.11.00.zip)
 
 ### **Version 0.10.0**
-* **Date:** 2014-08-26
+Date: 2014-08-26
 * **Tested On:**
 	* Qlik Sense Version/Desktop: 0.96
 	* QlikView.Next Server: 0.95
