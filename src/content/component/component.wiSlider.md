@@ -6,7 +6,7 @@ title: wiSlider Component
 
 Use the wiSlider compoonent to manipulate the numeric values of one or two Qlik Sense variables with a graphical slider.
 
-## Basic Usage
+## Basic Example
 
 ***Html:***
 
@@ -14,7 +14,7 @@ Use the wiSlider compoonent to manipulate the numeric values of one or two Qlik 
 	    min="0" 
 	    max="100"
 	    step="10"
-	    bind-qs="vSliderResult"
+	    bind-qs-var="vSliderResult"
 	    >
 	</wi-slider>
 	
@@ -49,9 +49,9 @@ Property				| Description
 `bind-local`			| Local scope variable to store the result into.<br/>(only applies if `range` is disabled)
 `bind-local-min`		| Local scope variable to store the minimum-result into.<br/>(only applies if `range` is enabled)
 `bind-local-max`		| Local scope variable to store the maximum-result into.<br/>(only applies if `range` is enabled)
-`bind-qs`				| Name of a Qlik Sense variable to store the result into.<br/>(only applies if `range` is disabled)
-`bind-qs-min`			| Name of a Qlik Sense variable to store the minimum-result into.<br/>(only applies if `range` is enabled)
-`bind-qs-max`			| Name of a Qlik Sense variable to store the maximum-result into.<br/>(only applies if `range` is enabled)
+`bind-qs-var`				| Name of a Qlik Sense variable to store the result into.<br/>(only applies if `range` is disabled)
+`bind-qs-var-min`			| Name of a Qlik Sense variable to store the minimum-result into.<br/>(only applies if `range` is enabled)
+`bind-qs-var-max`			| Name of a Qlik Sense variable to store the maximum-result into.<br/>(only applies if `range` is enabled)
 
 
 ### Ticks
@@ -119,7 +119,7 @@ The implementation of wiSlider is based on the [jQuery UI Slider](http://jqueryu
 	    min="0" 
 	    max="100"
 	    step="10"
-	    bind-qs="vSliderResult"
+	    bind-qs-var="vSliderResult"
 	    >
 	</wi-slider>
 
@@ -130,8 +130,8 @@ The implementation of wiSlider is based on the [jQuery UI Slider](http://jqueryu
 	    max="100"
 	    step="10"
 		range="true"
-	    bind-qs-min="vSliderResultMin"
-		bind-qs-max="vSliderResultMax
+	    bind-qs-var-min="vSliderResultMin"
+		bind-qs-var-max="vSliderResultMax
 	    >
 	</wi-slider>
 
@@ -142,7 +142,7 @@ The implementation of wiSlider is based on the [jQuery UI Slider](http://jqueryu
 	    max="100"
 	    step="10"
 		orientation="vertical"
-	    bind-qs="vSliderResult"
+	    bind-qs-var="vSliderResult"
 	    >
 	</wi-slider>
 
@@ -164,6 +164,9 @@ Note: In the sense of responsiveness this is not an ideal solution!!!
 	    ticks-rest="label"
 	    ticks-step="5"
 	    
+	    bind-qs-var-min="vSliderResultMin"
+		bind-qs-var-max="vSliderResultMax
+
 	    style="height:300px"
 	    
 	    >
@@ -180,8 +183,8 @@ Not supported, yet.
 	    max="100"
 	    step="10"
 		range="true"
-	    bind-qs-min="vSliderResultMin"
-		bind-qs-max="vSliderResultMax
+	    bind-qs-var-min="vSliderResultMin"
+		bind-qs-var-max="vSliderResultMax
 	    >
 	</wi-slider>
 
@@ -213,7 +216,7 @@ Not supported, yet.
 ## Appendix
 ### How to Define Variables ?
 
-As of Qlik Sense 0.96 you can create variables only in the load script:
+As of Qlik Sense 1.0 you can create variables only in the load script:
 
 	// Use only integer values as of now !
 	SET vVariableName = 155;
