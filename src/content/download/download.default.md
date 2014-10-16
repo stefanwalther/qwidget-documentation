@@ -6,20 +6,26 @@ title: Download
 
 ## Latest Qlik Sense 1.0 Build
 
-* **Version 0.12.00**
-* **Date:** 2014-10-13
+* **Version 0.12.01**
+* **Date:** 2014-10-16
 * **Tested On:**
 	* Qlik Sense Version: 1.0
 	* Qlik Sense Server: 1.0
 	* Browser: Chrome + Internet Explorer 11
-* **Download:** [qWidget_0.12.00.zip](download/qWidget_0.12.00.zip)
+* **Download:** [qWidget_0.12.01.zip](download/qWidget_0.12.01.zip)
 
 -----
 
 ## Change Log
 
-### Version 0.12.0 
+### Version 0.12.1
+Date: 2014-10-16  
+* **Features:**
+    * Improvements to `wiSysInfo`: Sheets are now returned in the correct order
+    * Improvements to `wiAction`: `gotoSheet`, `nextSheet` & `prevSheet` work now much better (without a hard browser refresh)
 
+### Version 0.12.0 
+Date: 2014-10-13  
 * **Features:**
     * New wiButtongroup component
 * **Breaking Changes:**
