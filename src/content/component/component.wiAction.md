@@ -92,7 +92,7 @@ Action							| Description
 <wi-sys-info content="bookmarks">
     <ul class="wiList">
         <li ng-repeat="bookmark in bookmarks">
-            <b>{{bookmark.qData.title}}</b>
+            <b>{{safe "{{bookmark.qData.title}}"}}</b>
             [<a href="javascript:void(0);" 
 				wi-action="bookmark.apply('{{safe "{{bookmark.qInfo.qId}}"}}')">Apply</a>]
             | 

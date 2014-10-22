@@ -9,7 +9,7 @@ This is especially useful while using typical data-binding functionality while c
 
 ## Basic Usage
 
-Instead of just typing `{{layout.qHyperCube}}` which returns you the following (which is incredibly hard to read:
+Instead of just typing `{{safe "{{layout.qHyperCube}}"}}` which returns you the following (which is incredibly hard to read:
 
 
 > ![](img/component_wiDebug_Before.png)

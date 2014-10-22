@@ -15,6 +15,7 @@ The following system meta information can be retrieved with `wiSysInfo`:
 - A collection of all **Extensions** available
 - A collection of all **Bookmarks**
 - A collection of all **Current Selections**
+- A collection of all **Master Objects**
 
 
 ## Basic Example - Default Visualization
@@ -40,7 +41,7 @@ If you for example just want to retrieve the collection of **Bookmarks** and **E
 	    <b>Bookmarks:</b>
 	    <ul class="myListStyle">
 	        <li ng-repeat="bookmark in bookmarks">
-	            {{bookmark.qData.title}}
+	            {{safe "{{bookmark.qData.title}}"}}
 	        </li>
 	    </ul>
 	    
@@ -48,7 +49,7 @@ If you for example just want to retrieve the collection of **Bookmarks** and **E
 	    <b>Extensions:</b>
 	    <ul class="myListStyle">
 	        <li ng-repeat="extension in extensions">
-	            {{extension}}
+	            {{safe "{{extension}}"}}
 	        </li>
 	    </ul>
 	</wi-sys-info>
@@ -77,7 +78,7 @@ Some use-cases:
 
 | Name 				| Type 		| Description
 | ---- 				| ---------	| ------------------------------------------------
-| **`content`**		| Strings	| Comma separated list of desired objects.<br/><br/>**Default:** `empty`, will return the following object types: `'apps', 'sheets', 'fields', 'measures', 'dimensions', 'extensions', 'bookmarks', 'currentselections'`<br/>><br/>**Possible Values:**<br/>`'apps'`, `'sheets'`, `'fields'`, `'measures'`, `'dimensions',` `'extensions'`, `'bookmarks'`, `'currentselections'`,`visualizations`
+| **`content`**		| Strings	| Comma separated list of desired objects.<br/><br/>**Default:** `empty`, will return the following object types: `'apps', 'sheets', 'fields', 'measures', 'dimensions', 'extensions', 'bookmarks', 'currentselections'`, `masterobjects`<br/><br/>**Possible Values:**<br/>`'apps'`, `'sheets'`, `'fields'`, `'measures'`, `'dimensions',` `'extensions'`, `'bookmarks'`, `'currentselections'`, `masterobjects`, `visualizations`
 
 Note: `visualizations` is the slowest content type because detailed information for all objects in the app will be retrieved from the QIX Engine.
 
@@ -100,7 +101,7 @@ Now let's display all available properties of the bookmark-collection:
 
 	<wi-sys-info content="bookmarks">
 	    <div ng-repeat="bookmark in bookmarks">
-	        {{bookmark}}
+	        {{safe "{{bookmark}}"}}
 	        <hr/>
 	    </div>
 	</wi-sys-info>
@@ -110,9 +111,14 @@ You will see the following in the qWidget-LivePreview:
 
 > ![](img/component_wiSysInfo_RetrieveProperties_Result.png)
 
-# Examples
+### Copying the Object Id
+All IDs in the default visualization of wiSysInfo can be selected and copied.
+Note: Use Ctrl+Shift + the context menu to get the normal browser context menu (works both in Qlik Sense Desktop and if are working on a Qlik Sense Server).
 
-## Retrieving all Visualizations + Filter
+
+## Examples
+
+### Retrieving all Visualizations + Filter
 
 ***Html:***
 
@@ -136,8 +142,8 @@ So by changing our Html-code as follows:
 	<br/>
 	<wi-sys-info content="bookmarks">
 	    <div ng-repeat="bookmark in bookmarks">
-	        <b>Title:</b> {{bookmark.qData.title}}<br/>
-	        </b>Description:</b> {{bookmark.qData.description}}<br/>
+	        <b>Title:</b> {{safe "{{bookmark.qData.title}}"}}<br/>
+	        </b>Description:</b> {{safe "{{bookmark.qData.description}}"}}<br/>
 	        <hr/>
 	    </div>
 	</wi-sys-info>
@@ -147,8 +153,3 @@ We will now retrieve the desired result:
 
 
 > ![](img/component_wiSysInfo_RetrieveProperties_Result.png)
-
-
-## Known Limitations
-
-The content-types "`dimensions`" and "`measures`" do not work in 0.95 (see [http://community.qlik.com/thread/123518](http://community.qlik.com/thread/123518)).

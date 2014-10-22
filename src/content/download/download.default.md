@@ -6,19 +6,29 @@ title: Download
 
 ## Latest Qlik Sense 1.0 Build
 
-* **Version 0.12.01**
-* **Date:** 2014-10-16
+* **Version 0.12.03**
+* **Date:** 2014-10-22
 * **Tested On:**
 	* Qlik Sense Version: 1.0
 	* Qlik Sense Server: 1.0
 	* Browser: Chrome + Internet Explorer 11
-* **Download:** [qWidget_0.12.01.zip](download/qWidget_0.12.01.zip)
+* **Download:** [qWidget_0.12.03.zip](download/qWidget_0.12.03.zip)
 
 -----
 
 ## Change Log
 
-### Version 0.12.1
+### Version 0.12.03
+Date: 2014-10-22
+* **Features / Improvements:**
+    * Improved wi-sys-info ...
+		* Added the ability to get the Master Objects with `wiSysInfo`
+		* Added details to `measures`, `dimensions` and `masterobjects` in the default output of `wiSysInfo`
+    * Enabled `wiAction` in `wiTab`
+* **Bugfixes:**
+	* Fixed a lot of errors in the documentation
+
+### Version 0.12.01
 Date: 2014-10-16  
 * **Features:**
     * Improvements to `wiSysInfo`: Sheets are now returned in the correct order

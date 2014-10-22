@@ -101,21 +101,21 @@ Examples how a progressbar would look like depending on the chosen `type`:
             <wi-progressbar 
                 max="layout.property1" 
                 value="layout.property2" 
-                type="success">{{layout.property2}}%
+                type="success">{{safe "{{layout.property2}}"}}%
 			</wi-progressbar>        
         </div>
         <div class="row">
             <wi-progressbar>
                 <progress>
-                    <bar value="layout.property3" type="danger">{{layout.property3}}%</bar>
-                    <bar value="layout.property4" type="success">{{layout.property4}}%</bar>
+                    <bar value="layout.property3" type="danger">{{safe "{{layout.property3}}"}}%</bar>
+                    <bar value="layout.property4" type="success">{{safe "{{layout.property4}}"}}%</bar>
                 </progress>
             </wi-progressbar>
         </div>
         <div class="row">
             <wi-progressbar 
 				max="100" 
-				value="layout.property5">{{layout.property5}}%
+				value="layout.property5">{{safe "{{layout.property5}}"}}%
 			</wi-progressbar>
         </div>
     </div>

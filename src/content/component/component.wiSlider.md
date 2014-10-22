@@ -23,7 +23,7 @@ Use the wiSlider compoonent to manipulate the numeric values of one or two Qlik 
 	<i>(based on a Qlik Sense variable vSliderResult)</i><br/><br/>
 	
 	<ui>
-		<li><b>vSliderResult:</b> {{layout.property1}}</li>
+		<li><b>vSliderResult:</b> {{safe "{{layout.property1}}"}}</li>
 	</ui>
 
 ***Property Definition:***

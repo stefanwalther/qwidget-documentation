@@ -47,7 +47,7 @@ Dynamic CSS-properties
 
 	/* layout.property1 = #efefef */
 	.myClass {
-		color: {{layout.property1}};
+		color: {{safe "{{layout.property1}}"}};
 	}
 
 Styling with Less-properties:

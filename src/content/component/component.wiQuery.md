@@ -26,7 +26,7 @@ There are two different notations to declare the desired requests for the QIX-en
 
 	<wiQuery expression="[{target: 'myExpression', expression: '=GetPossibleCount('Dim1')}]">
 		<view>
-			{{result.myExpression}}
+			{{safe "{{result.myExpression}}"}}
 		</view>
 	</wiQuery>
 
@@ -43,7 +43,7 @@ There are two different notations to declare the desired requests for the QIX-en
 			<list target="myExpression" expression="GetPossibleCount('Dim1')" />
 		</lists>
 		<view>
-			{{result.myExpression}}
+			{{safe "{{result.myExpression}}"}}
 		</view>
 	<wiQuery>
 
