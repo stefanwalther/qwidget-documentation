@@ -27,7 +27,7 @@ Some of these ideas are published here:
 	* Range Slider / Slider {{label "success" "Done"}}
 	* Pagination {{label "warning" "Postponed"}}
 	* Timepicker {{label "warning" "Postponed"}}
-	* Datepicker {{label "warning" "Postponed"}}
+	* Datepicker {{label "success" "Done"}}
 * **Component Improvements**
 	* `wi-action` {{label "success" "Done"}}
 		* Multiple Actions {{label "success" "Done"}}

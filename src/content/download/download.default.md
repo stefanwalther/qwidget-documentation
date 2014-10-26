@@ -6,22 +6,32 @@ title: Download
 
 ## Latest Qlik Sense 1.0 Build
 
-* **Version 0.12.03**
-* **Date:** 2014-10-22
+* **Version 0.13.00**
+* **Date:** 2014-10-26
 * **Tested On:**
 	* Qlik Sense Version: 1.0
 	* Qlik Sense Server: 1.0
-	* Browser: Chrome + Internet Explorer 11
-* **Download:** [qWidget_0.12.03.zip](download/qWidget_0.12.03.zip)
+	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
+* **Download:** [qWidget_0.13.00.zip](download/qWidget_0.13.00.zip)
 
 -----
 
 ## Change Log
 
+### Version 0.13.00
+Date: 2014-10-26
+
+* **Features / Improvements:**
+    * New component `wiDatepicker`
+* **Bugfixes:**
+    * Some major bugfixes to get qWidget working in Firefox
+    * Embedding linked-objects into tabs should now work by default
+
 ### Version 0.12.03
 Date: 2014-10-22
+
 * **Features / Improvements:**
-    * Improved wi-sys-info ...
+    * Improved `wiSysInfo` ...
 		* Added the ability to get the Master Objects with `wiSysInfo`
 		* Added details to `measures`, `dimensions` and `masterobjects` in the default output of `wiSysInfo`
     * Enabled `wiAction` in `wiTab`
@@ -29,13 +39,15 @@ Date: 2014-10-22
 	* Fixed a lot of errors in the documentation
 
 ### Version 0.12.01
-Date: 2014-10-16  
+Date: 2014-10-16
+
 * **Features:**
     * Improvements to `wiSysInfo`: Sheets are now returned in the correct order
     * Improvements to `wiAction`: `gotoSheet`, `nextSheet` & `prevSheet` work now much better (without a hard browser refresh)
 
 ### Version 0.12.0 
-Date: 2014-10-13  
+Date: 2014-10-13
+
 * **Features:**
     * New wiButtongroup component
 * **Breaking Changes:**
@@ -48,6 +60,7 @@ Date: 2014-10-13
 
 ### Version 0.11.03
 Date: 2014-10-06
+
 * **Bugfixes:**
     * Several minor bugfixes for Qlik Sense Server 1.0
     * On the Qlik Sense Server assets from local repository couldn't be loaded (.less is not an allowed media-type)
@@ -56,10 +69,12 @@ Date: 2014-10-06
 
 ### Version 0.11.01
 Date: 2014-09-22
+
 * Several Bugfixes for Qlik Sense Server 1.0
 
 ### **Version 0.11.00**
-* **Date:** 2014-09-04
+Date: 2014-09-04
+
 * **Tested On:**
 	* Qlik Sense Version: 0.97 (Build Nr. 634)
 	* Qlik Sense Server: Should work on Qlik Sense Server (Build Nr. 634), but could unfortunately not test it, didn't get the server up and running ... ;-(
@@ -68,6 +83,7 @@ Date: 2014-09-22
 
 ### **Version 0.10.0**
 Date: 2014-08-26
+
 * **Tested On:**
 	* Qlik Sense Version/Desktop: 0.96
 	* QlikView.Next Server: 0.95
@@ -84,7 +100,8 @@ Date: 2014-08-26
 		* Rebuild documentation for allowing deep-linking to specific page
 
 ### Version 0.9.03
-* **Date:** 2014-08-07
+Date: 2014-08-07
+
 * **Tested On:**
 	* Qlik Sense Version/Desktop: 0.96
 	* QlikView.Next Server: 0.95
@@ -107,7 +124,8 @@ Date: 2014-08-26
 	* 0.9.03: Added backwards compatibility for gotoSheet
 
 ### Version 0.8.00
-* **Date:** 2014-08-04
+Date: 2014-08-04
+
 * **Tested On:**
 	* Qlik Sense Version/Desktop: 0.96
 	* QlikView.Next Server: 0.95
@@ -117,7 +135,8 @@ Date: 2014-08-26
 	* Enabled support for QlikView.Next Server 0.95
 
 ### Version 0.7.20 (0.7.19)
-* **Date:** 2014-07-31
+Date: 2014-07-31
+
 * **Qlik Sense Version:** 0.96 / Qlik Sense Desktop
 * **Qlik Sense Server Support:** Not tested intensively, yet! **Will probably not work!!**
 * **Browser:** Tested mainly in Chrome + Internet Explorer 11
@@ -153,7 +172,8 @@ Date: 2014-08-26
 	* Some `wiTab` samples
 
 ### Version: 0.6.6
-* **Date:** 2014-07-14
+Date: 2014-07-14
+
 * **QlikView.Next Version:** 0.95/0.96
 * **Browser:** Tested mainly in Chrome + Internet Explorer 11
 * **Download:** [qWidget_0.6.6.zip](download/qWidget_0.6.6.zip)
@@ -181,7 +201,8 @@ Date: 2014-08-26
 
 
 ### Version: 0.5.1
-* **Date:** 2014-07-06
+Date: 2014-07-06
+
 * **QlikView.Next Version:** 0.95/0.96
 * **Browser:** Tested mainly in Chrome + Internet Explorer 11
 * **Download:** [qWidget_0.5.1.zip](download/qWidget_0.5.1.zip)
@@ -194,7 +215,8 @@ Date: 2014-08-26
 	* Tested and enabled for Qlik Sense Desktop (tested with version 0.96)
 
 ### Version: 0.4.15
-* **Date:** 2014-07-03
+Date: 2014-07-03
+
 * **QlikView.Next Version:** 0.95
 * **Browser:** Tested mainly in Chrome & Internet Explorer 11
 * **Bugfixes:**
@@ -202,7 +224,8 @@ Date: 2014-08-26
 	* Some minor performance improvements
 
 ### Version 0.4.13
-* **Date:** 2014-07-03
+Date: 2014-07-03
+
 * **QlikView.Next Version:** 0.95
 * **Browser:** Tested mainly in Chrome & Internet Explorer 11
 * **New Features:**
@@ -222,12 +245,14 @@ Date: 2014-08-26
 	* Doesn't work anymore for QlikView.Next Personal Edition 0.9 (existing qWidgets from 0.9 will continue to work though)
 
 ### Version 0.3.1
-* **Date:** 2014-06-25
+Date: 2014-06-25
+
 * **QlikView.Next Version:** 0.95
 * **Browser:** Tested mainly in Chrome
 
 ### Version 0.2.0
-* Date: 2014-06-22
+Date: 2014-06-22
+
 * QlikView.Next Version: 0.90
 * * New Features:
 	* **MediaBox** Directive for integrating web-pages and videos
@@ -239,13 +264,15 @@ Date: 2014-08-26
 * Download: [qWidget_0.2.0.zip](download/qWidget_0.2.0.zip)
 
 ### Version 0.1.1
-* Date: 2014-06-20
+Date: 2014-06-20
+
 * QlikView.Next Version: 0.90
 * Improvements:
 	* Reduced loading-time by about 25%
 
 ### Version 0.1.0
-* Date: 2014-06-19 
+Date: 2014-06-19
+
 * Internal Alpha
 
 ## About Versioning
