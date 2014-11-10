@@ -6,17 +6,26 @@ title: Download
 
 ## Latest Qlik Sense 1.0 Build
 
-* **Version 0.13.00**
+* **Version 0.13.03**
 * **Date:** 2014-10-26
 * **Tested On:**
-	* Qlik Sense Version: 1.0
-	* Qlik Sense Server: 1.0
+	* Qlik Sense Version: 1.0, MS9
+	* Qlik Sense Server: 1.0, MS9
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
-* **Download:** [qWidget_0.13.00.zip](download/qWidget_0.13.00.zip)
+* **Download:** [qWidget_0.13.03.zip](download/qWidget_0.13.03.zip)
 
 -----
 
 ## Change Log
+
+### Version 0.13.03
+* **Minor Changes:**
+    * Updated editor source files (ACE editor)
+    * Some performance optimization in the HyperCube shorthand notation
+* **Bugfixes:**
+    * Minor changes to enable qWidget also for Qlik Sense MS9
+    * If qWidget has been added to the master-items, now only the master-item can be edited
+    * Minor bugfixes to `wiDatePicker`
 
 ### Version 0.13.00
 Date: 2014-10-26
