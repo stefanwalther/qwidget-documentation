@@ -6,17 +6,26 @@ title: Download
 
 ## Latest Qlik Sense 1.0 Build
 
-* **Version 0.13.03**
-* **Date:** 2014-10-26
+* **Version 0.14.02**
+* **Date:** 2014-11-25
 * **Tested On:**
 	* Qlik Sense Version: 1.0, MS9
 	* Qlik Sense Server: 1.0, MS9
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
-* **Download:** [qWidget_0.13.03.zip](download/qWidget_0.13.03.zip)
+* **Download:** [qWidget_0.14.02.zip](download/qWidget_0.14.02.zip)
 
 -----
 
 ## Change Log
+
+### Version 0.14.02
+* **Bugfixes:**
+    * Loading from the Qlik Internal Repository didn't work
+    * Hypercube-Shorthand notation didn't work properly.
+
+### Version 0.14.01
+* **Minor Update:**
+    * Removed message in case of MS10
 
 ### Version 0.13.03
 * **Minor Changes:**
