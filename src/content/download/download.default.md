@@ -12,7 +12,7 @@ title: Download
 	* Qlik Sense Version: 1.0, MS9
 	* Qlik Sense Server: 1.0, MS9
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
-* **Download:** [qWidget_0.14.02.zip](download/qWidget_0.14.02.zip)
+* **Download:** [qWidget_0.14.02.zip](http://community.qlik.com/community/qlikview_beta_programs/qwidget_limited_public_beta)
 
 -----
 

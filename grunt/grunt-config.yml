@@ -1,0 +1,40 @@
+# =============================================
+# Build config
+# =============================================
+
+# Meta Information
+meta:
+  title: qWidget
+  description: qWidget documentation site
+  version: 1.0.0
+
+# Destination path for the build
+dest:
+  path:             ./../app/views/
+
+# Source
+src:
+  path:             ./../src
+  includes:         ./../src/templates/includes/*.hbs
+  layouts:          ./../src/templates/layouts
+  assets:           ./../src/assets
+  extensions:       ./../src/extensions
+
+# Resources
+res:
+  bootstrap:        ./../bower_components/bootstrap
+  jquery:           ./../bower_components/jquery
+
+
+# Default Template
+defaults:
+  layout:           default.hbs
+
+# Content
+content:
+  default:          ./../src/content/
+  endpoints:        ./../src/content/endpoints/
+
+
+
+

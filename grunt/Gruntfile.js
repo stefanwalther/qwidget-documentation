@@ -11,7 +11,7 @@ module.exports = function( grunt ) {
     // Creates the timer in the output
     //require('time-grunt')(grunt);
 
-    var site = grunt.file.readYAML( 'src/data/config.yml' );
+    var site = grunt.file.readYAML( './grunt-config.yml' );
 
     // Project configuration.
     grunt.initConfig({
@@ -52,7 +52,7 @@ module.exports = function( grunt ) {
                 options: {
                     open: true,
                     base: [
-                        'build'
+                        './../app/views/'
                     ]
                 }
             }
@@ -60,17 +60,18 @@ module.exports = function( grunt ) {
 
         assemble: {
             options: {
+                force: true,
                 flatten: true,
                 trace: true,
                 //assets: '<%= config.dist %>/assets',
                 //layout: '<%= config.src %>/templates/layouts/default.hbs',
                 layoutdir: '<%= site.src.path %>/templates/layouts',
-                data: 'src/data/config.yml',
+                data: './grunt-config.yml',
                 //data: 'src/data/*.{json,yml}',
                 partials: '<%= site.src.path %>/templates/partials/*.hbs',
 
                 // Extensions
-                helpers: 'src/extensions/helpers/*.js',
+                helpers: './../src/extensions/helpers/*.js',
 
                 marked: {
                     gfm: true,
@@ -103,7 +104,14 @@ module.exports = function( grunt ) {
         },
 
         // Before generating any new files, remove any previously-created files.
-        clean: ['<%= site.dest.path %>/**/**'],
+        clean: {
+            options: {
+                force: true
+            },
+            files  : {
+                src: [ '<%= site.dest.path %>/**/**' ]
+            }
+        },
 
         copy: {
             options: {
@@ -111,24 +119,24 @@ module.exports = function( grunt ) {
             },
             assets: {
                 files: [
-                    {expand: true, cwd: 'bower_components/bootstrap/dist/css', src: ['*.min.*'], dest: 'build/assets/external/bootstrap/css/'},
-                    {expand: true, cwd: 'src/assets/css', src: ['*.css'], dest: 'build/assets/css/'},
-                    {expand: true, cwd: 'src/assets/photos', src: ['*.*'], dest: 'build/assets/photos/'},
-                    {expand: true, cwd: 'src/assets/external', src: ['**/*.*'], dest: 'build/assets/external/'},
-                    {expand: true, cwd: 'src/assets/js', src: ['*.*'], dest: 'build/assets/js/'},
-                    {expand: true, cwd: 'bower_components/bootstrap/dist/fonts', src: ['*.*'], dest: 'build/assets/external/bootstrap/fonts/'},
-                    {expand: true, cwd: 'bower_components/bootstrap/dist/js', src: ['*.*'], dest: 'build/assets/external/bootstrap/'},
-                    {expand: true, cwd: 'bower_components/jquery/dist', src: ['*.min.*'], dest: 'build/assets/external/jquery/'},
-                    {expand: true, cwd: 'bower_components/jquery-ui/', src: ['jquery-ui.min.js'], dest: 'build/assets/external/jquery-ui/'}
+                    {expand: true, cwd: './../bower_components/bootstrap/dist/css', src: ['*.min.*'], dest: './../app/views/assets/external/bootstrap/css/'},
+                    {expand: true, cwd: './../src/assets/css', src: ['*.css'], dest: './../app/views/assets/css/'},
+                    {expand: true, cwd: './../src/assets/photos', src: ['*.*'], dest: './../app/views/assets/photos/'},
+                    {expand: true, cwd: './../src/assets/external', src: ['**/*.*'], dest: './../app/views/assets/external/'},
+                    {expand: true, cwd: './../src/assets/js', src: ['*.*'], dest: './../app/views/assets/js/'},
+                    {expand: true, cwd: './../bower_components/bootstrap/dist/fonts', src: ['*.*'], dest: './../app/views/assets/external/bootstrap/fonts/'},
+                    {expand: true, cwd: './../bower_components/bootstrap/dist/js', src: ['*.*'], dest: './../app/views/assets/external/bootstrap/'},
+                    {expand: true, cwd: './../bower_components/jquery/dist', src: ['*.min.*'], dest: './../app/views/assets/external/jquery/'},
+                    {expand: true, cwd: './../bower_components/jquery-ui/', src: ['jquery-ui.min.js'], dest: './../app/views/assets/external/jquery-ui/'}
                 ]
             },
             downloads: {
                 files: [
                     {
                         expand: true,
-                        cwd: 'src/download',
+                        cwd: './../src/download',
                         src: ['*.*'],
-                        dest: 'build/download/'
+                        dest: './../app/views/download/'
                     }
                 ]
             },
@@ -137,9 +145,9 @@ module.exports = function( grunt ) {
                     {
                         expand: true,
                         flatten: true,
-                        cwd: 'src/content',
+                        cwd: './../src/content',
                         src: ['**/img/*.*'],
-                        dest: 'build/img/'
+                        dest: './../app/views/img/'
                     }]
             }
         },
@@ -154,7 +162,7 @@ module.exports = function( grunt ) {
                 },
                 files: {
                     // target.css file: source.less file
-                    "build/assets/css/customStyle.css": "src/assets/less/generator.less"
+                    "./../app/views/assets/css/customStyle.css": "./../src/assets/less/generator.less"
                 }
             }
         },
