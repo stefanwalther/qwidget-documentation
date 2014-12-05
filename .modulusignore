@@ -4,6 +4,7 @@
 /build/
 /grunt/
 /src/
+/dist/
 .gitignore
 DevScribble.md
 bower.json

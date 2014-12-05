@@ -12,7 +12,7 @@ For styling your qWidgets you can use the entire functionality of CSS and even m
 Basically you can certainly style all your Html-elements with inline-styles but it is highly recommended to use separated styles due to the following reasons:
 
 * Better maintainability
-* Better reusability
+* Better re-usability
 * Html is Easier to understand and read for others
 
 
@@ -61,5 +61,5 @@ Styling with Less-properties:
 
 
 ## A Note on Potential CSS-Conflicts
-One of the main challenges when working on the qWidget-concept was to find a solution to prevent that a user can influence or even break the styling of the client. I finally came up with a solution where this should never happen, so no worries.
+One of the main challenges when working on the qWidget-concept was to find a solution that prevents a user influencing or even breaking the styling of the client. Qlik finally came up with a solution where this should never happen.
 

@@ -6,17 +6,27 @@ title: Download
 
 ## Latest Qlik Sense 1.0 Build
 
-* **Version 0.14.02**
-* **Date:** 2014-11-25
+* **Version 0.20.01**
+* **Date:** 2014-12-06
 * **Tested On:**
-	* Qlik Sense Version: 1.0, MS9
-	* Qlik Sense Server: 1.0, MS9
+	* Qlik Sense Version: 1.0, 1.0.1
+	* Qlik Sense Server: 1.0, 1.0.1
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
-* **Download:** [qWidget_0.14.02.zip](http://community.qlik.com/community/qlikview_beta_programs/qwidget_limited_public_beta)
+	* Not tested yet: Safari
+* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](http://community.qlik.com/community/qlikview_beta_programs/qwidget_limited_public_beta)
 
 -----
 
 ## Change Log
+
+### Version 0.20.01
+* Initial version for the Limited Public Beta of qWidget
+* Changes:
+    * Documentation has been moved to (http://doc.qwidget.mod.bz/)
+    * Authentication for the qWidget repository is now based on either Google, GitHub or Twitter
+
+
+## Change Log before Limited Public Beta
 
 ### Version 0.14.02
 * **Bugfixes:**
@@ -96,7 +106,7 @@ Date: 2014-08-26
 
 * **Tested On:**
 	* Qlik Sense Version/Desktop: 0.96
-	* QlikView.Next Server: 0.95
+	* Qlik Sense Server: 0.95
 	* Browser: Chrome + Internet Explorer 11
 * **New Features**:
 	* **New Components**:
@@ -113,7 +123,7 @@ Date: 2014-08-07
 
 * **Tested On:**
 	* Qlik Sense Version/Desktop: 0.96
-	* QlikView.Next Server: 0.95
+	* Qlik Sense Server: 0.95
 	* Browser: Chrome + Internet Explorer 11
 * **New Features:**
 	* New Components:
@@ -136,10 +146,10 @@ Date: 2014-08-04
 
 * **Tested On:**
 	* Qlik Sense Version/Desktop: 0.96
-	* QlikView.Next Server: 0.95
+	* Qlik Sense Server: 0.95
 	* Browser: Chrome + Internet Explorer 11
 * **New Features:**
-	* Enabled support for QlikView.Next Server 0.95
+	* Enabled support for Qlik Sense Server 0.95
 
 ### Version 0.7.20 (0.7.19)
 Date: 2014-07-31
@@ -180,7 +190,7 @@ Date: 2014-07-31
 ### Version: 0.6.6
 Date: 2014-07-14
 
-* **QlikView.Next Version:** 0.95/0.96
+* **Qlik Sense Version:** 0.95/0.96
 * **Browser:** Tested mainly in Chrome + Internet Explorer 11
 * **New Features:**
 	* New Actions:
@@ -208,7 +218,7 @@ Date: 2014-07-14
 ### Version: 0.5.1
 Date: 2014-07-06
 
-* **QlikView.Next Version:** 0.95/0.96
+* **Qlik Sense Version:** 0.95/0.96
 * **Browser:** Tested mainly in Chrome + Internet Explorer 11
 * **New Features:**
 	* Added several new actions to **`wi-action`** (see documentation):
@@ -221,7 +231,7 @@ Date: 2014-07-06
 ### Version: 0.4.15
 Date: 2014-07-03
 
-* **QlikView.Next Version:** 0.95
+* **Qlik Sense Version:** 0.95
 * **Browser:** Tested mainly in Chrome & Internet Explorer 11
 * **Bugfixes:**
 	* Fixed a major issue with styles (styles disappeared in qWidget-NormalView after some selections have been made in the document)
@@ -230,11 +240,11 @@ Date: 2014-07-03
 ### Version 0.4.13
 Date: 2014-07-03
 
-* **QlikView.Next Version:** 0.95
+* **Qlik Sense Version:** 0.95
 * **Browser:** Tested mainly in Chrome & Internet Explorer 11
 * **New Features:**
 	* Tested with Internet Explorer 11
-	* Works now for both QlikView.Next 0.90 and Qlik Sense Desktop 1.0 (0.96)
+	* Works now for both Qlik Sense 0.90 and Qlik Sense Desktop 1.0 (0.96)
 	* Component **`wi-linked-object`** to embed existing objects into your qWidget
 	* Component **`wi-sys-info`** to retrieve system meta data from the QIX engine (like a list of apps, sheets, objects, bookmarks, etc.)
 * **Documentation:**
@@ -246,18 +256,18 @@ Date: 2014-07-03
 	* Major performance improvements
 	* Fixed memory leak in qWidget-Editor when working either a long time or with large Html/Css code-blocks
 * **Breaking Changes:**
-	* Doesn't work anymore for QlikView.Next Personal Edition 0.9 (existing qWidgets from 0.9 will continue to work though)
+	* Doesn't work anymore for Qlik Sense Personal Edition 0.9 (existing qWidgets from 0.9 will continue to work though)
 
 ### Version 0.3.1
 Date: 2014-06-25
 
-* **QlikView.Next Version:** 0.95
+* **Qlik Sense Version:** 0.95
 * **Browser:** Tested mainly in Chrome
 
 ### Version 0.2.0
 Date: 2014-06-22
 
-* QlikView.Next Version: 0.90
+* Qlik Sense Version: 0.90
 * * New Features:
 	* **MediaBox** Directive for integrating web-pages and videos
 * Documentation:
@@ -265,12 +275,11 @@ Date: 2014-06-22
 		* General Positioning
 		* Why JavaScript is not allowed in qWidgets
 	* MediaBox Directive documentation
-* Download: [qWidget_0.2.0.zip](download/qWidget_0.2.0.zip)
 
 ### Version 0.1.1
 Date: 2014-06-20
 
-* QlikView.Next Version: 0.90
+* Qlik Sense Version: 0.90
 * Improvements:
 	* Reduced loading-time by about 25%
 
@@ -281,11 +290,7 @@ Date: 2014-06-19
 
 ## About Versioning
 ### Semantic Versioning
-qWidget uses Semantic Versioning: http://semver.org/
+qWidget uses Semantic Versioning: (http://semver.org/)
 
 ### New Version Notification
-If you are connected to the Qlik-intranet (either directly or via VPN) the extension will automatically check if there are updates available and display the following indicator if there is a newer version available:
-
-![](img/VersionChecker.png)
-
-This only applies to major updates, of e.g. if 0.2.0 is published instead of 0.1.0, you will not get a notification for minor updates like from 0.1.40 to 0.1.41.
+If you are connected to the Internet, you will be notified of new versions in the qWidget Edit-Mode.

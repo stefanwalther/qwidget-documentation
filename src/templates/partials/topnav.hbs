@@ -47,6 +47,20 @@
                     </ul>
                 </li>
 
+                <!-- HowTo -->
+                <li class="dropdown {{#is this.area "component"}}active{{/is}}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To ... <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        {{#withSort pages "filename"}}
+                            {{#compare data.published "!==" false}}
+                                {{#is data.area "howto"}}
+                                    <li><a href="{{this.filename}}">{{default data.navtitle data.title}}</a></li>
+                                {{/is}}
+                            {{/compare}}
+                        {{/withSort}}
+                    </ul>
+                </li>
+
                 <!-- Components -->
                 <li class="dropdown {{#is this.area "component"}}active{{/is}}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>

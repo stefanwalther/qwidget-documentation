@@ -4,7 +4,7 @@
 <meta name="description" content="{{default description config.meta.description}}">
 
 <title>
-    {{config.meta.title}} | {{default title page.basename}}
+    qWidget | {{default title page.basename}}
 </title>
 
 <!-- Stylesheets -->
@@ -12,3 +12,17 @@
 <link rel="stylesheet" href="{{relativeToRoot}}assets/external/bootstrap/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" href="{{relativeToRoot}}assets/css/theme.css" />
 <link rel="stylesheet" href="{{relativeToRoot}}assets/css/customStyle.css" />
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script language="javascript">
+
+    // Add a target="_blank" to all external links
+    $(function() {
+        $( 'a[href^="http://"],[href^="https://"]' )
+                .attr( 'target','_blank' )
+                .addClass( 'external_link' )
+        ;
+    });
+</script>

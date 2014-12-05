@@ -230,17 +230,19 @@ module.exports = function( grunt ) {
         'copy:images',
         'copy:downloads',
         'less:build',
-        'htmlmin',
+        'htmlmin'
 
-        'wkhtmltopdf',
+        //'wkhtmltopdf',
 
-        'connect',
-        'watch'
+        //'connect',
+        //'watch'
 
     ]);
 
     grunt.registerTask('default', [
-        'build'
+        'build',
+        'connect',
+        'watch'
     ]);
 
     // Has to be called separately since I have no idea how to get a callback when generating the

@@ -4,8 +4,12 @@ navtitle: Contact & Support
 title: Contact & Support
 ---
 
-There is a [salesforce.com chatter-group](https://eu1.salesforce.com/_ui/core/chatter/groups/GroupProfilePage?g=0F9D0000000LN9X) which serves as the main resource for support related questions.
+Feedback, Questions & Ideas: [Qlik Community | qWidget - Limited Public Beta](http://community.qlik.com/community/qlikview_beta_programs/qwidget_limited_public_beta)
+
+You are free to use this extension for both, commercial and private use.
+Qlik's support agreement does not cover support for this extension.
 
 Please keep in mind:
-* This is only an **INTERNAL ALPHA VERSION** and more or less a **PROTOTYPE**
+* This is only a **BETA VERSION** and more or less a **PROTOTYPE**
+* This is not an official product/project of Qlik, therefore qWidget is not supported.  
 

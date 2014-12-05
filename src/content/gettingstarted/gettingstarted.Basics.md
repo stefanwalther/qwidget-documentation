@@ -5,23 +5,24 @@ title: Getting Started - Basics
 
 ## Introduction
 
-The basic idea behind qWidgets is that you should be able to create **new visualizations without the need of programming them in JavaScript** by leveraging Qlik Sense' extension concept. By just using Html & CSS you can create completely new and astonishing objects in Qlik Sense which behave like all other objects and even more:
+The basic idea behind qWidgets is that you should be able to create **new visualizations without the need for programming in JavaScript** by leveraging Qlik Sense' extension concept. By just using HTML & CSS you can create completely new and astonishing objects in Qlik Sense which behave like all other objects and even more:
 
 qWidgets can be
 
-* Created by just copying Html & CSS from one of the thousands libraries out there ...
+* Created by just copying HTML & CSS from one of the thousands of libraries out there ...
 * Copied from one app to another app
 * Put and to master-library and re-used from there
-* Used in Stories
-* Used accross apps and even installations of Qlik Sense
+* Used in Story Telling
+* Used across apps and even installations of Qlik Sense
 * and more ...
 
 ## Installation
 Installation of qWidget is straightforward since qWidget is "just" an extension:
 
-* [Download the extension](http://bit.ly/qWidgetDL)
+* [Download the extension](http://bit.ly/qWidget-Download)
 	* Unzip the .zip file
 * Copy the .zip-file below the folder `...\Users\[UserName]\Documents\Qlik\Sense\Extensions`
+    * After that you should have a folder `...\Users\[UserName\Documents\Qlik\Sense\Extensions\qWidget\`
 * (In some cases it is necessary to close and re-open the Qlik Sense client)
 * If you are in edit-mode you should see in the list of objects now a new object called "qWidget"
   
@@ -41,7 +42,7 @@ There are three main areas in qWidget extensions:
 - The "qWidget Loader"
 
 ## The qWidget-Editor
-If you hover over a newly added qWidget object and edit icon will be shown. Click on this icon and the edit mode of the qWidget-extension will be opened:
+If you hover over a newly added qWidget object an edit icon will be shown. Click on this icon and the edit mode of the qWidget-extension will be opened:
 
 ![](img/EditIcon.png)
 
@@ -70,7 +71,7 @@ Click on the following button to open the tool:
 Then the following window will appear which displays all variables you can use in the current object:
 ![](img/Popup_VariableInserter.png)
 
-More detailed information on how to use variables and how databinding works in qWidget can be found in the section "Documentation - Data Binding".
+More detailed information on how to use variables and how data-binding works in qWidget can be found in the section "Documentation - Data Binding".
 
 ### Code Snippets
 
@@ -106,7 +107,7 @@ At any time you can export your qWidget using the "Export-Tool":
 
 The qWidget-Loader connects you to the qWidget Repository, which is a central repository of assets for the qWidget extension.
 
-Leveraging the qWidget Repository allows you to
+Leveraging the qWidget Repository allows you to:
 * Load new visualizations (with code) from an app-independent repository
 * Publish your qWidgets for later usage
 * Share qWidgets with colleagues
@@ -126,17 +127,16 @@ Click on "Load Widget" in the top menu and the Widget Loader will appear.
 By default you'll see some qWidgets from your local qWidget-Repository. This local repository is delivered as a part of the qWidget extension.
 
 ### How to use the qWidget-Loader
-As soon as you click on "**Preview**" you'll see a preview of the qWidget in the right pane. If you then click "Use qWidget" the underlaying Html & Css-/Less-code will be applied to the Widget-Editor (you are then not connected anymore to the online repository).
+As soon as you click on "**Preview**" you'll see a preview of the qWidget in the right pane. If you then click "Use qWidget" the underlying HTML & CSS-/Less-code will be applied to the Widget-Editor (you are then not connected anymore to the online repository).
 
 ### Connecting to the Online-Repository
-If you change the repository to Qlik Internal Repository (and if you are working in the Qlik intranet-zone) you'll see that the list of qWidgets will be updated:
+If you change the repository to "Limited Public Beta Repository (ONLINE)" you'll see that the list of qWidgets will be updated:
 
 ![](img/WidgetLoader_OnlineRepository.png)
 
 
-
 ## qWidget Extension Updates
-If you are connected to the Qlik-intranet (either directly or via VPN) the extension will automatically check if there are updates available and display the following indicator if there is a newer version available:
+qWidget will automatically check if there are updates available and display the following indicator if there is a newer version available:
 
 ![](img/VersionChecker.png)
 
