@@ -6,11 +6,11 @@ title: Download
 
 ## Latest Qlik Sense 1.0 Build
 
-* **Version 0.20.01**
-* **Date:** 2014-12-06
+* **Version 0.21.01**
+* **Date:** 2014-12-12
 * **Tested On:**
-	* Qlik Sense Version: 1.0, 1.0.1
-	* Qlik Sense Server: 1.0, 1.0.1
+	* Qlik Sense Version: 1.0, 1.0.1, 1.0.2
+	* Qlik Sense Server: 1.0, 1.0.1, 1.0.2
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
 	* Not tested yet: Safari
 * The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](http://community.qlik.com/community/qlikview_beta_programs/qwidget_limited_public_beta)
@@ -19,11 +19,25 @@ title: Download
 
 ## Change Log
 
-### Version 0.20.01
+### Version 0.21.02
+* Date: 2014-12-16
+* Improvements:
+    * Better loading & error messages
+
+### Version 0.21.01
+* Date: 2014-12-12
+* Improvements
+    * Usage of snippets and qWidgets
+    * All modal dialogs can now also be closed by pressing the Esc key
+    * The badge "Not approved" in the list of qWidgets is only displayed if the qWidget is not marked as "private"
+    * Optimizations to the repository to prevent lock-out scenarios if the user session expires.
+    * Some minor layout improvements
+
+### Version 0.20.04
+* Date: 2014-12-08
 * Initial version for the Limited Public Beta of qWidget
 * Changes:
     * Documentation has been moved to (http://doc.qwidget.mod.bz/)
-    * Authentication for the qWidget repository is now based on either Google, GitHub or Twitter
 
 
 ## Change Log before Limited Public Beta

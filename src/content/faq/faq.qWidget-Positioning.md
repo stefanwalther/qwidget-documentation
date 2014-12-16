@@ -1,6 +1,7 @@
 ---
 area: faq
 title: Positioning of qWidget
+published: false
 ---
 
 ## Why having qWidget, Mashups & Extensions ?

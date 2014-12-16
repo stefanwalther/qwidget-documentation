@@ -13,7 +13,7 @@ Basically you can certainly style all your Html-elements with inline-styles but 
 
 * Better maintainability
 * Better re-usability
-* Html is Easier to understand and read for others
+* HTML is easier to understand and read for others
 
 
 ### Example Inline-Style
@@ -61,5 +61,5 @@ Styling with Less-properties:
 
 
 ## A Note on Potential CSS-Conflicts
-One of the main challenges when working on the qWidget-concept was to find a solution that prevents a user influencing or even breaking the styling of the client. Qlik finally came up with a solution where this should never happen.
+One of the main challenges when working on the qWidget concept was to find a solution that prevents a user influencing or even breaking the styling of the client. Qlik finally came up with a solution where this should never happen.
 

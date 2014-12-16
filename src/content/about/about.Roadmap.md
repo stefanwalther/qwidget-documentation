@@ -4,7 +4,7 @@ navtitle: Roadmap
 title: Roadmap
 ---
 
-The current version of qWidget is an early preview or alpha-version. While working on this concept a lot of new ideas came in my mind how this concept could be extended.
+The current version of qWidget is an early prototype. While working on this concept, a lot of new ideas came to my mind how this concept could be extended.
 Some of these ideas are published here:
 
 ## Planned Features
@@ -16,6 +16,7 @@ Some of these ideas are published here:
 	* Lists by Declaration {{label "info" "In Progress"}}
 * **Improve Performance**
 	* Editor Improvements
+	* Improve performance when working with tables
 	* Concatenate all files into a single .js file (only one request to the server, therefore much faster loading time)  {{label "info" "In Progress"}}
 * **UI Controls / UI-Components**
 	* Accordion
@@ -47,17 +48,16 @@ Some of these ideas are published here:
 	* Better Code-Snippet support
 	* More Icons
 * **Functionality**
+	* Export existing qWidgets
 	* Import exported qWidgets
 * **Publishing**
 	* Ability to define the required qWidget version for a published qWidget
 * **Backend**
 	* Rewritten and documented backend which can also be used by customers/partners {{label "info" "In Progress"}}
-	* Multiple authentication methods (TBD)
+	* Multiple authentication methods
 * **Documentation** {{label "success" "Done"}}
 	* Enable deep linking to pages (requires a re-write of the documentation page) {{label "success" "Done"}}
 	* Make documentation pages faster {{label "success" "Done"}}
-* **Technical Documentation**
-	* Technical Documentation to open source the solution about one month after Public Beta on branch.qlik.com
 * **Samples**
 	* `wiTab` Examples {{label "info" "In Progress"}}
 * **Filter**

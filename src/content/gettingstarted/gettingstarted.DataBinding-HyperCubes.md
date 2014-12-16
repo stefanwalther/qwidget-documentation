@@ -6,7 +6,7 @@ title: Data Binding - Working with HyperCubes
 ## Introduction
 If you are defining **Measures and Dimensions** in your qWidget object (like in any other Qlik Sense object) the result is an internal **data table** exposed to the object.
 This data table can and should certainly be used in qWidgets.
-There are two ways that you can bind your HTML code to the internal data table of your object:
+There are two ways to bind your HTML code to the internal data table of your object:
 
 * The **default way**, accessing the so called HyperCube (which is the internal data table mentioned above) directly as an Extension developer would.
 * The (more convenient) way of using the **shorthand notation** provided by qWidget which makes is less complex to work with data.
@@ -28,10 +28,10 @@ If you are choosing the default way you should be aware of some of the basic obj
 
 
 ### How to Learn this Stuff?
-The easiest way to get confident with Qlik Sense' internal representation of the data is to let qWidget let do the work:
+The easiest way to get confident with Qlik Sense' internal representation of the data is to let qWidget do the work:
 
 ***Example:***
-Just enter {{safe "{{layout.qHyperCube.qDataPage[0].qMatrix[0][0]}}" }} into qWidget's Html-Editor and you will see the following result in the Live-Preview:
+Just enter {{safe "{{layout.qHyperCube.qDataPage[0].qMatrix[0][0]}}" }} into qWidget's Html-Editor and you will see the following result in the Live Preview:
 
 ![](img/DataBinding_DefaultWay_PreviewOutput.png)
 
@@ -39,7 +39,7 @@ This tells us that for the **1st row" and **3rd** columns we have the following 
 * `qText`: The text representation of the cell's value
 * `qNum`: The numeric representation of the cell's value
 
-By knowing this now we can change the binding a little bit if we want to use the text representation in our qWidget:
+By knowing this, we can now change the binding a little bit if we want to use the text representation in our qWidget:
 
 ![](img/DataBinding_DefaultWay_PreviewOutput_Detailed.png)
 
@@ -153,7 +153,7 @@ Since using the above described notation is quite erroneous, qWidget offers a sh
 
 There is no need to read the above mentioned online documentation in detail when you are trying to find specific properties of a cell or a header.
 
-Just output (during development) the returned object of the above mentioned methods and you will immediately see all the available properties in the Preview-Pane:
+Just output (during development) the returned object of the above mentioned methods and you will immediately see all the available properties in the Preview area:
 
 ***Html:***
 

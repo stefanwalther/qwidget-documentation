@@ -69,9 +69,9 @@ Action							| Description
 
 Action					| Description								
 -----------------------	| -------------------------------  
-**`nextSheet`**			| Go to the next sheet (**experimental**)
-**`prevSheet`**			| Go to the previous sheet (**experimental**)
-**`gotoSheet`**			| Go to a sheet with the given Id<br/><br/>**Parameters:**<br/>`id` - Id of the sheet<br/>`useQlikView` - Hack for backwards compatibility to allow gotoSheet also in QlikView.Next Server 0.95; `true` or `false` (Defaults: `false`) {{label "danger" "Deprecated in version 0.11 or higher"}}<br/><br/>**Example:**<br/>`wi-action="gotoSheet('zBIAzG')"`
+**`nextSheet`**			| Go to the next sheet
+**`prevSheet`**			| Go to the previous sheet
+**`gotoSheet`**			| Go to a sheet with the given Id<br/><br/>**Parameters:**<br/>`id` - Id of the sheet<br/><br/>**Example:**<br/>`wi-action="gotoSheet('zBIAzG')"`
 
 
 ### Variables

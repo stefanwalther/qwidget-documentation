@@ -3,14 +3,14 @@ area: gettingstarted
 title: Data Binding - Introduction
 ---
 
-For understanding how **data-binding** in qWidget works, you first have to understand some very basics of data-binding in AngularJS because not only Qlik Sense but also qWidgets heavily uses the concept of [AngularJS](http://www.angularjs.org).
+To understand how **data-binding** in qWidget works, you first have to understand some very basics of data-binding in AngularJS because not only Qlik Sense but also qWidgets heavily uses the concept of [AngularJS](http://www.angularjs.org).
 
 ## The Scope
 AngularJS introduces the concept of a "scope", in the context of qWidgets this means that all the data (dimensions & measures) and all properties are stored and exposed in the scope of your extensions/object. When it comes to data-binding you can use the entire scope to make your qWidget dynamic and bound to Qlik Sense.
 
-The **great benefit of this approach** is that Qlik Sense automatically takes care of updating the scope, so if for example a new selection is made, the scope will be updated automatically. Since AngularJS takes care of updating your UI (depending of the underlaying scope), your UI will be updated accordingly.
+The **great benefit of this approach** is that Qlik Sense automatically takes care of updating the scope, so if for example a new selection is made, the scope will be updated automatically. Since AngularJS takes care of updating your UI (depending on the underlying scope), your UI will be updated accordingly.
 
-The scope of a qWidget-objects contains:
+The scope of a qWidget object contains:
 
 - All **default properties**, which are available for all Qlik Sense objects (like title, subtitle, footer, etc.)
 - A **"straight table"** (defined by one ore more dimensions and measures)
@@ -43,12 +43,12 @@ The easiest way to bind some HTML-element to data is to use curly-braces (`{{saf
 
 	{{safe "{{layout.title}}"}}
 
-Everything inside the curly braces will be automatically replaced with the appropriate value, if the content within the curly braces cannot be found, the resulting string is just an empty string.
+Everything inside the curly braces will be automatically replaced with the appropriate value.If the content within the curly braces cannot be found, the resulting string is just an empty string.
 
 ## More Information
 Since data binding is realized using [AngularJS](https://angularjs.org/), further information can be found on the [AngularJS documentation page](https://docs.angularjs.org/api).
 
-Within the context of qWidget the following topics are especially:
+Within the context of qWidget the following topics are worth reading:
 
 * [ngClass](https://docs.angularjs.org/api/ng/directive/ngClass)
 * [ngClassEven](https://docs.angularjs.org/api/ng/directive/ngClassEven)

@@ -2,6 +2,7 @@
 area: component
 navtitle: Query
 title: wiQuery Component
+published: false
 ---
 
 wiQuery allows you to query the QIX-engine by defining objects by declaration.
