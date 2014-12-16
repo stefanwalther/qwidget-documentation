@@ -6,11 +6,11 @@ title: Download
 
 ## Latest Qlik Sense 1.0 Build
 
-* **Version 0.21.01**
-* **Date:** 2014-12-12
+* **Version 0.21.04**
+* **Date:** 2014-12-16
 * **Tested On:**
-	* Qlik Sense Version: 1.0, 1.0.1, 1.0.2
-	* Qlik Sense Server: 1.0, 1.0.1, 1.0.2
+	* Qlik Sense Version: 1.0.*, 1.1
+	* Qlik Sense Server: 1.0.*, 1.1
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
 	* Not tested yet: Safari
 * The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](http://community.qlik.com/community/qlikview_beta_programs/qwidget_limited_public_beta)
@@ -19,10 +19,13 @@ title: Download
 
 ## Change Log
 
-### Version 0.21.02
+### Version 0.21.04
 * Date: 2014-12-16
 * Improvements:
     * Better loading & error messages
+    * Improved loading of icons in the qWidget Editor
+    * Added ability to search for snippets.
+    * Added support for upcoming version 1.1 of Qlik Sense
 
 ### Version 0.21.01
 * Date: 2014-12-12
