@@ -3,21 +3,61 @@ area: download
 title: Download
 ---
 
+Qlik Sense 2.2
 
-## Latest Qlik Sense 1.0 Build
+## Latest Qlik Sense 1.*, 2.0 Build
+* **Version 0.25.00**
+* **Date:** 2016-02-19
+* **Fixes:**
+    - Fixed a flickering issue in Qlik Sense 2.2
+* **Tested On:**
+	* Qlik Sense Version: 1.*, 2.0
+	* Qlik Sense Server: 1.*, 2.0
+	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
+	* Not tested yet: Safari
+* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta)
 
-* **Version 0.21.04**
-* **Date:** 2014-12-16
+
+* **Version 0.23.01**
+* **Date:** 2015-05-12
+* **New:**
+    - Removed "not supported" message completely and tested for the upcoming Qlik Sense 2.0 release
+* **Tested On:**
+	* Qlik Sense Version: 1.*, 2.0
+	* Qlik Sense Server: 1.*, 2.0
+	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
+	* Not tested yet: Safari
+* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta)
+
+-----
+
+## Change Log
+
+
+### Version 0.23.00
+* **Date:** 2015-05-06
+* **Tested On:**
+	* Qlik Sense Version: 1.*, 2.0
+	* Qlik Sense Server: 1.*, 2.0
+	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
+	* Not tested yet: Safari
+* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta)
+
+
+### Version 0.21.05
+* **Date:** 2014-12-17
 * **Tested On:**
 	* Qlik Sense Version: 1.0.*, 1.1
 	* Qlik Sense Server: 1.0.*, 1.1
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
 	* Not tested yet: Safari
-* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](http://community.qlik.com/community/qlikview_beta_programs/qwidget_limited_public_beta)
 
------
 
-## Change Log
+### Version 0.21.05
+* Date: 2014-12-17
+* Improvements:
+    * Better quality of the generated screenshot when publishing a qWidget
+
 
 ### Version 0.21.04
 * Date: 2014-12-16
