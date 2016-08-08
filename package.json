@@ -1,7 +1,7 @@
 {
-  "name": "qWidget.Documentation",
+  "name": "qwidget-documentation",
   "version": "1.0.0",
-  "description": "Public help for qWidget.",
+  "description": "Public help for qWidget (Limited Public Beta).",
   "main": "server.js",
   "mod-project-name": "qWidget",
   "dependencies": {

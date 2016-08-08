@@ -1,6 +1,6 @@
-# qWidget.Documentation
+# qwidget-documentation
 
-> Public help for qWidget.
+> Public help for qWidget (Limited Public Beta).
 
 ## About
 Repository for generating the help for the "Limited Public Beta of qWidget".
