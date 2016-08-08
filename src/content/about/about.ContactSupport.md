@@ -4,7 +4,7 @@ navtitle: Contact & Support
 title: Contact & Support
 ---
 
-Feedback, Questions & Ideas: [Qlik Community | qWidget - Limited Public Beta](https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta)
+Feedback, Questions & Ideas: [Qlik Community | qWidget - Limited Public Beta](https://community.qlik.com/community/qlik_product_insight/qwidget_limited_public_beta)
 
 You are free to use this extension for both, commercial and private use.
 Qlik's support agreement does not cover support for this extension.

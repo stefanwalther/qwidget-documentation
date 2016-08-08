@@ -3,6 +3,15 @@ area: download
 title: Download
 ---
 
+## Latest Qlik Sense 3.x Build
+* **Version 0.26.00**
+* **Date:** 2016-08-08**
+* **Fixes:**
+	- Fixed an issue of qWidget destroying the default fonts in Qlik Sense 3.0
+* **Changes:**
+	- Documentation has been moved to [http://stefanwalther.github.io/qwidget-documentation](http://stefanwalther.github.io/qwidget-documentation)
+* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_product_insight/qwidget_limited_public_beta)
+
 ## Latest Qlik Sense 2.x Build
 * **Version 0.25.00**
 * **Date:** 2016-02-29
@@ -11,7 +20,7 @@ title: Download
 * **Tested On:**
 	* Qlik Sense Version: 2.2, 2.1.1
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
-* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta)
+* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_product_insight/qwidget_limited_public_beta)
 
 
 -----
@@ -27,7 +36,7 @@ title: Download
 	* Qlik Sense Server: 1.*, 2.0
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
 	* Not tested yet: Safari
-* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta)
+* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_product_insight/qwidget_limited_public_beta)
 
 
 ### Version 0.23.00
@@ -37,7 +46,7 @@ title: Download
 	* Qlik Sense Server: 1.*, 2.0
 	* Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)
 	* Not tested yet: Safari
-* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta)
+* The latest version can be downloaded from the [Qlik Community - qWidget Limited Beta Forum](https://community.qlik.com/community/qlik_product_insight/qwidget_limited_public_beta)
 
 
 ### Version 0.21.05
