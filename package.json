@@ -33,5 +33,29 @@
     "url": "''"
   },
   "author": "Stefan Walther",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "verb": {
+    "run": true,
+    "toc": {
+      "render": true,
+      "method": "preWrite",
+      "maxdepth": 2,
+      "footer": " "
+    },
+    "twitter": "waltherstefan",
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": []
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ]
+  }
 }

@@ -5,7 +5,7 @@ title: Download
 
 ## Latest Qlik Sense 3.x Build
 * **Version 0.26.00**
-* **Date:** 2016-08-08**
+* **Date:** 2016-08-08
 * **Fixes:**
 	- Fixed an issue of qWidget destroying the default fonts in Qlik Sense 3.0
 * **Changes:**
