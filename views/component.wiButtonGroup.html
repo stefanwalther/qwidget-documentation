@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<title>
+    qWidget | Button Group Component
+</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="assets/css/theme.css" />
+<link rel="stylesheet" href="assets/css/customStyle.css" />
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script language="javascript">
+
+    // Add a target="_blank" to all external links
+    $(function() {
+        $( 'a[href^="http://"],[href^="https://"]' )
+                .attr( 'target','_blank' )
+                .addClass( 'external_link' )
+        ;
+    });
+</script>
+
+
+<body >
+
+<!-- Top Navigation -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="default.html"><span class="wi-q">q</span><span class="wi-widget">Widget</span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <!-- Getting Started -->
+                <!-- Todo: Better way would be using contains, but does not work in the current version -->
+                <li class="dropdown " >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Tutorials</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Basics.html">Getting Started - Basics</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-General.html">Data Binding - Introduction</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-HyperCubes.html">Data Binding - Working with HyperCubes</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.HtmlStructure.html">Structure of your qWidget</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Styling.html">Styling your qWidgets</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Resources</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="resources.UsefulResources.html">Useful Resources</a></li>
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">FAQ</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.PerformanceImpact.html">Performance Impact</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.RepositoryConcept.html">The Repository Concept</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- HowTo -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To ... <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.ConditionalDisplay.html">Implement Show Conditions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.MiniChart.html">Use Minicharts in Tables</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.UseSliderTables.html">Use the Slider Component (with Tables)</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- Components -->
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiAction.html">Actions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiBootstrap.html">Bootstrap Style</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiButtonGroup.html">Button Group</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDatepicker.html">Datepicker</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDebug.html">Debug Component</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiLinkedObject.html">Linked (Embedded) Objects</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMediaBox.html">MediaBox (Video, WebPage, ...)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMinichart.html">MiniCharts</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiProgressbar.html">Progressbar</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSlider.html">Slider</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSysInfo.html">Sys Info (Meta Data)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiTab.html">Tab</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- About -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.ContactSupport.html">Contact &amp; Support</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Contribute.html">Contribute</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.KnownIssues.html">Known Issues</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Roadmap.html">Roadmap</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class=" "><a href="download.default.html">Download</a></li>
+            </ul>
+
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div id="content" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="toc" class="bs-sidebar affix bs-sidenav hidden-print"></div>
+        </div>
+        <div class="col-md-9 generatedMarkdown">
+            <h1>Button Group Component</h1>
+            <p>wiButtongroup allows you to define <a href="http://getbootstrap.com/2.3.2/base-css.html#buttons">Boostrap styled button-groups</a> with single- or multiple-selections. If the user changes the selection, the result will be stored in a Qlik Sense variable.</p>
+<h2 id="basic-example">Basic Example</h2>
+<p><strong><em>Html:</em></strong></p>
+<pre><code>&lt;wi-buttongroup bind-qs-var=&quot;vOpt1&quot;&gt;
+    &lt;wi-radio-button label=&quot;First&quot; value=&quot;&#39;first&#39;&quot;&gt;&lt;/wi-radio-button&gt;
+    &lt;wi-radio-button label=&quot;Second&quot; value=&quot;&#39;second&#39;&quot;&gt;&lt;/wi-radio-button&gt;
+    &lt;wi-radio-button label=&quot;Third&quot; value=&quot;&#39;third&#39;&quot;&gt;&lt;/wi-radio-button&gt;
+&lt;/wi-buttongroup&gt;</code></pre>
+<p><strong><em>Result:</em></strong>
+<img src="img/component.wiButtonGroup_BasicExample.png" alt=""></p>
+<p>The user can only select one of the buttons at the same time (like a Radio-Button), the result (&#39;first&#39;, &#39;second&#39; or &#39;third&#39;) will be stored to the Qlik Sense variable <code>vOpt1</code>.
+<code>vOpt1</code> also defines the initial value of the button-group. </p>
+<h2 id="properties">Properties</h2>
+<p><strong>Buttongroup</strong>
+The button-group is the container which holds either check-buttons or radio-buttons (don&#39;t mix check- and radio-buttons within a button-group).</p>
+<ul>
+<li><strong><code>bind-qs-var</code></strong><br>The name of the variable the button should be bound to.<br><em>(Only applicable if you use wiRadiobuttons).</em></li>
+</ul>
+<p><strong>Radio-Buttons and CheckButtons</strong>
+These properties are available for both Radio-Buttons and Check-Buttons.</p>
+<ul>
+<li><strong><code>label</code></strong><br>Label of the button.</li>
+<li><strong><code>value</code></strong><br>Value which will be stored to the defined variable if the button is selected.</li>
+<li><strong><code>design</code></strong><br>Default style for the button.<br>Possible values are <code>default</code>, <code>primary</code>, <code>info</code>, <code>success</code>, <code>warning</code>, <code>danger</code>, <code>link</code>.<br>(Defaults: <code>default</code>)</li>
+</ul>
+<p><strong>Check-Buttons</strong></p>
+<ul>
+<li><strong><code>bind-qs-var</code></strong><br>Name of the variable the button should be bound to.</li>
+</ul>
+<h2 id="designs">Designs</h2>
+<p>Depending on the property <code>design</code> a (according to the pre-defined styles of Bootstrap) design will be applied:</p>
+<p><img src="img/component.wiButtonGroup_Designs.png" alt=""></p>
+<h2 id="custom-styles">Custom Styles</h2>
+<p>Custom styles can be defined as follows:</p>
+<p>First instead of using one of the predefined design, define &quot;custom&quot; in the property <code>design</code>:</p>
+<pre><code>&lt;wi-check-button design=&quot;custom&quot; ... /&gt;</code></pre>
+<p>By doing so the class <code>btn-custom</code> will be added to the button which can then be defined:</p>
+<pre><code>/* Default Style */
+.btn-custom {
+    background-color:#ccc;
+    color:#333;
+}
+/* Hover Style */
+.btn-custom:hover {
+    color:#666;
+}
+/* Style for active/pressed button */
+.btn-custom.active {
+    background-color:#999;
+    color:#efefef;
+}</code></pre>
+<p>Result:
+<img src="img/component.wiButtonGroup_CustomStyle.png" alt=""></p>
+<p>Full Code:</p>
+<pre><code>&lt;wi-buttongroup&gt;
+    &lt;wi-check-button design=&quot;custom&quot; value=&quot;left&quot; label=&quot;Left&quot; bind-qs-var=&quot;vOpt1&quot;/&gt;
+    &lt;wi-check-button design=&quot;custom&quot; value=&quot;middle&quot; label=&quot;Middle&quot; bind-qs-var=&quot;vOpt2&quot; /&gt;
+    &lt;wi-check-button design=&quot;custom&quot; value=&quot;right&quot; label=&quot;Right&quot; bind-qs-var=&quot;vOpt3&quot; /&gt;
+&lt;/wi-buttongroup&gt; </code></pre>
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">Copyright 2014 - Qlik/Stefan Walther</p>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript + other JS files
+================================================== -->
+<script src="assets/external/jquery/jquery.min.js"></script>
+<script src="assets/external/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/external/bootstrap/bootstrap.min.js"></script>
+<script src="assets/external/jquery.tocify/jquery.tocify.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56114350-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

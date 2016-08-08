@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<title>
+    qWidget | wiMiniChart Component
+</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="assets/css/theme.css" />
+<link rel="stylesheet" href="assets/css/customStyle.css" />
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script language="javascript">
+
+    // Add a target="_blank" to all external links
+    $(function() {
+        $( 'a[href^="http://"],[href^="https://"]' )
+                .attr( 'target','_blank' )
+                .addClass( 'external_link' )
+        ;
+    });
+</script>
+
+
+<body >
+
+<!-- Top Navigation -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="default.html"><span class="wi-q">q</span><span class="wi-widget">Widget</span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <!-- Getting Started -->
+                <!-- Todo: Better way would be using contains, but does not work in the current version -->
+                <li class="dropdown " >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Tutorials</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Basics.html">Getting Started - Basics</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-General.html">Data Binding - Introduction</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-HyperCubes.html">Data Binding - Working with HyperCubes</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.HtmlStructure.html">Structure of your qWidget</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Styling.html">Styling your qWidgets</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Resources</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="resources.UsefulResources.html">Useful Resources</a></li>
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">FAQ</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.PerformanceImpact.html">Performance Impact</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.RepositoryConcept.html">The Repository Concept</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- HowTo -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To ... <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.ConditionalDisplay.html">Implement Show Conditions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.MiniChart.html">Use Minicharts in Tables</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.UseSliderTables.html">Use the Slider Component (with Tables)</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- Components -->
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiAction.html">Actions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiBootstrap.html">Bootstrap Style</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiButtonGroup.html">Button Group</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDatepicker.html">Datepicker</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDebug.html">Debug Component</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiLinkedObject.html">Linked (Embedded) Objects</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMediaBox.html">MediaBox (Video, WebPage, ...)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMinichart.html">MiniCharts</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiProgressbar.html">Progressbar</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSlider.html">Slider</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSysInfo.html">Sys Info (Meta Data)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiTab.html">Tab</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- About -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.ContactSupport.html">Contact &amp; Support</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Contribute.html">Contribute</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.KnownIssues.html">Known Issues</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Roadmap.html">Roadmap</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class=" "><a href="download.default.html">Download</a></li>
+            </ul>
+
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div id="content" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="toc" class="bs-sidebar affix bs-sidenav hidden-print"></div>
+        </div>
+        <div class="col-md-9 generatedMarkdown">
+            <h1>wiMiniChart Component</h1>
+            <p>The Minichart directive allows you to integrate several minicharts (bar, sparkline, bulletchart, etc.) into your qWidgets.
+The implementation is based on the excellent <a href="http://omnipotent.net/jquery.sparkline/"><strong>jQuery-Sparklines</strong></a> library.</p>
+<h2 id="basic-example">Basic Example</h2>
+<pre><code>&lt;wi-minichart 
+    type=&quot;line&quot; 
+    data=&quot;10,66,13,58&quot;
+    width=&quot;100px&quot;&gt;
+&lt;/wi-minichart&gt;</code></pre>
+<p>Results into 
+<img src="img/directive_miniChart_default.png" alt=""></p>
+<h3 id="usage">Usage</h3>
+<p>wiMinichart can be either used as an element or as an attribute:</p>
+<p><strong><em>Element:</em></strong></p>
+<pre><code>&lt;wi-minichart ... /&gt;</code></pre>
+<p><strong><em>Attribute:</em></strong></p>
+<pre><code>&lt;div wi-minichart ... /&gt;</code></pre>
+<h2 id="minichart-types">Minichart-Types</h2>
+<p>Minicharts are available in the following types:</p>
+<ul>
+<li>Line (default)</li>
+<li>Bar</li>
+<li>Tristate</li>
+<li>Discrete</li>
+<li>Bullet</li>
+<li>Pie</li>
+<li>Box</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>You can implement several minicharts within a single qWidget.
+Common usage scenarios:</p>
+<ul>
+<li>Use a minichart in the background of KPI-tile</li>
+<li>Use minicharts as inline-charts for tables</li>
+</ul>
+<h2 id="common-chart-options">Common Chart Options</h2>
+<p>The following options can be set for most of the chart types:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>type</code></strong></td>
+<td>One of the following values: line, bar, tristate, discrete, bullet, pie, box</td>
+</tr>
+<tr>
+<td><strong><code>width</code></strong></td>
+<td>Width of the chart - Defaults to &#39;auto&#39; - May be any valid css width - 1.5em, 20px, etc (using a number without a unit specifier won&#39;t do what you want) - This option does nothing for bar and tristate chars (see barWidth)</td>
+</tr>
+<tr>
+<td><strong><code>height</code></strong></td>
+<td>Height of the chart - Defaults to &#39;auto&#39; (line height of the containing tag)</td>
+</tr>
+<tr>
+<td><strong><code>line-color</code></strong></td>
+<td>Used by line and discrete charts to specify the colour of the line drawn as a CSS values string</td>
+</tr>
+<tr>
+<td><strong><code>fill-color</code></strong></td>
+<td>Specify the colour used to fill the area under the graph as a CSS value. Set to false to disable fill</td>
+</tr>
+<tr>
+<td><strong><code>chart-range-min</code></strong></td>
+<td>Specify the minimum value to use for the range of Y values of the chart - Defaults to the minimum value supplied</td>
+</tr>
+<tr>
+<td><strong><code>chart-range-max</code></strong></td>
+<td>Specify the maximum value to use for the range of Y values of the chart - Defaults to the maximum value supplied</td>
+</tr>
+<tr>
+<td><strong><code>opacity</code></strong></td>
+<td>Opacity of the chart, added to the functionality of jQuery-Sparklines, default: 1, 50%-opacity would be defined with <code>opacity=&quot;0.5&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="linechart-options">Linechart-Options</h3>
+<p>Line charts are the default chart type, but to specify the type explicitly set an option called &quot;type&quot; to &quot;line&quot;.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>default-pixels-per-value</code></strong></td>
+<td>Defaults to 3 pixels of width for each value in the chart</td>
+</tr>
+<tr>
+<td><strong><code>spot-color</code></strong></td>
+<td>The CSS colour of the marker displayed for the mimum value. Set to false or an empty string to hide it</td>
+</tr>
+<tr>
+<td><strong><code>min-spot-color</code></strong></td>
+<td>The CSS colour of the marker displayed for the mimum value. Set to false or an empty string to hide it</td>
+</tr>
+<tr>
+<td><strong><code>max-spot-color</code></strong></td>
+<td>The CSS colour of the marker displayed for the maximum value. Set to false or an empty string to hide it</td>
+</tr>
+<tr>
+<td><strong><code>spot-radius</code></strong></td>
+<td>Radius of all spot markers, In pixels (default: 1.5) - Integer</td>
+</tr>
+<tr>
+<td><strong><code>value-spots</code></strong></td>
+<td>Specifies which points to draw spots on, and with which colour. Accepts a range. For example, to render green spots on all values less than 50 and red on values higher use {&#39;:49&#39;: &#39;green, &#39;50:&#39;: &#39;red&#39;}</td>
+</tr>
+<tr>
+<td><strong><code>highlight-spot-color</code></strong></td>
+<td>Specifies a colour for the spot that appears on a value when moused over. Set to null to disable.</td>
+</tr>
+<tr>
+<td><strong><code>highlight-line-color</code></strong></td>
+<td>Specifies a colour for the vertical line that appears through a value when moused over. Set to null to disable.</td>
+</tr>
+<tr>
+<td><strong><code>line-width</code></strong></td>
+<td>In pixels (default: 1) - Integer</td>
+</tr>
+<tr>
+<td><strong><code>normal-range-min</code></strong></td>
+</tr>
+<tr>
+<td><strong><code>normal-range-max</code></strong></td>
+</tr>
+<tr>
+<td><strong><code>draw-normal-on-top</code></strong></td>
+<td>By default the normal range is drawn behind the fill area of the chart. Setting this option to true causes it to be drawn over the top of the fill area</td>
+</tr>
+<tr>
+<td><strong><code>xvalues</code></strong></td>
+</tr>
+<tr>
+<td><strong><code>chart-range-clip</code></strong></td>
+</tr>
+<tr>
+<td><strong><code>chart-range-min-x</code></strong></td>
+<td>Specifies the minimum value to use for the X value of the chart</td>
+</tr>
+<tr>
+<td><strong><code>chart-range-min-y</code></strong></td>
+<td>Specifies the maximum value to use for the X value of the chart</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bar-chart-options">Bar Chart Options</h3>
+<p>Set the &quot;type&quot; option to &quot;bar&quot; to generate bar charts. Values can be omitted by using the &quot;null&quot; value instead of a number.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>bar-color</code></strong></td>
+<td>CSS color used for postive values</td>
+</tr>
+<tr>
+<td><strong><code>neg-bar-color</code></strong></td>
+<td>CSS color used for negative values</td>
+</tr>
+<tr>
+<td><strong><code>zero-color</code></strong></td>
+<td>CSS color used for values equal to zero</td>
+</tr>
+<tr>
+<td><strong><code>null-color</code></strong></td>
+<td>CSS color used for values equal to null - By default null values are omitted entirely, but setting this adds a thin marker for the entry - This can be useful if your chart is pretty sparse; perhaps try setting it to a light gray or something equally unobtrusive</td>
+</tr>
+<tr>
+<td><strong><code>bar-width</code></strong></td>
+<td>Width of each bar, in pixels (integer)</td>
+</tr>
+<tr>
+<td><strong><code>bar-spacing</code></strong></td>
+<td>Space between each bar, in pixels (integer)</td>
+</tr>
+<tr>
+<td><strong><code>zero-axis</code></strong></td>
+<td>Centers the y-axis at zero if true (default)</td>
+</tr>
+<tr>
+<td><strong><code>color-map</code></strong></td>
+<td>A range map to map specific values to selected colours. For example if you want all values of -2 to appear yellow, use colorMap: { &#39;-2&#39;: &#39;#ff0&#39; }.<br/><br/>As of version 1.5 you may also pass an array of values here instead of a mapping to specifiy a color for each individual bar. For example if your chart has three values 1,3,1 you can set colorMap=[&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]<br/><br/> As of version 2.0, objects will be automatically be converted to range maps so you can specify colours for a range of values  </td>
+</tr>
+<tr>
+<td><strong><code>stacked-bar-color</code></strong></td>
+<td>An array of colours to use for stacked bar charts. The first series will use the first value in the array, the second series will use the second, etc. New in 2.0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="advanced-bar-chart-examples">Advanced Bar Chart Examples</h4>
+<p><strong>Bar Chart with opacity</strong>
+Ideal to be used in the background of tiles, etc.</p>
+<pre><code>&lt;wi-minichart 
+    type=&quot;bar&quot; 
+    data=&quot;-22,23,66,19,58,-99,99,23,26,80,33,55&quot;
+    width=&quot;100px&quot;
+    height=&quot;70px&quot;
+    bar-color=&quot;#cccccc&quot;
+    neg-bar-color=&quot;#ff0000&quot;
+    bar-width=&quot;15px&quot;
+    opacity=&quot;0.4&quot;
+    bar-spacing=&quot;3px&quot;
+    zero-axis=&quot;false&quot;&gt; 
+&lt;/wi-minichart&gt;</code></pre>
+<p>Results into:<br><img src="img/directive_miniChart_barAdvanced.png" alt=""></p>
+<h3 id="tristate-chart-options">Tristate Chart Options</h3>
+<p>Tri-state charts are useful to show win-lose-draw information, such as the SF Giants recent game results at the top of the page. You can also use the colorMap option to use different colours for different values, or for arbitrary positions in the chart.</p>
+<p>Set the &quot;type&quot; option to &quot;tristate&quot; to generate tristate charts.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>pos-bar-color</code></strong></td>
+<td>CSS color for positive (win) values</td>
+</tr>
+<tr>
+<td><strong><code>neg-bar-color</code></strong></td>
+<td>CSS color for negative (lose) values</td>
+</tr>
+<tr>
+<td><strong><code>zero-bar-color</code></strong></td>
+<td>CSS color for zero (draw) values</td>
+</tr>
+<tr>
+<td><strong><code>bar-width</code></strong></td>
+<td>Width of each bar, in pixels (integer)</td>
+</tr>
+<tr>
+<td><strong><code>bar-spacing</code></strong></td>
+<td>Space between each bar, in pixels (integer)</td>
+</tr>
+<tr>
+<td><strong><code>color-map</code></strong></td>
+<td>A range map to map specific values to selected colours. For example if you want all values of -2 to appear yellow, use colorMap: { &#39;-2&#39;: &#39;#ff0&#39; }.<br/><br/>As of version 1.5 you may also pass an array of values here instead of a mapping to specifiy a color for each individual bar. For example if your chart has three values 1,3,1 you can set colorMap=[&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]<br/><br/> As of version 2.0, objects will be automatically be converted to range maps so you can specify colours for a range of values </td>
+</tr>
+</tbody>
+</table>
+<h3 id="discrete-chart-options">Discrete Chart Options</h3>
+<p>Discrete charts provide a separated thin vertical line for each value.
+Set the &quot;type&quot; option to &quot;discrete&quot; to generate discrete charts.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>line-height</code></strong></td>
+<td>Height of each line in pixels - Defaults to 30% of the graph height</td>
+</tr>
+<tr>
+<td><strong><code>threshold-value</code></strong></td>
+<td>Values less than this value will be drawn using thresholdColor instead of lineColor</td>
+</tr>
+<tr>
+<td><strong><code>threshold-color</code></strong></td>
+<td>Colur to use in combination with thresholdValue</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bullet-chart-options">Bullet Chart Options</h3>
+<p>Set the &quot;type&quot; option to &quot;bullet&quot; to generate bullet graphs.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>target-color</code></strong></td>
+<td>The CSS color of the vertical target marker</td>
+</tr>
+<tr>
+<td><strong><code>target-width</code></strong></td>
+<td>The width of the target marker in pixels (integer)</td>
+</tr>
+<tr>
+<td><strong><code>performance-color</code></strong></td>
+<td>The CSS color of the performance measure horizontal bar</td>
+</tr>
+<tr>
+<td><strong><code>range-colors</code></strong></td>
+<td>Colors to use for each qualitative range background color - This must be a javascript array. eg [&#39;red&#39;,&#39;green&#39;, &#39;#22f&#39;]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pie-chart-options">Pie Chart Options</h3>
+<p>Set the &quot;type&quot; option to &quot;pie&quot; to generate pie charts.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>slice-colors</code></strong></td>
+<td>An array of CSS colors to use for pie slices</td>
+</tr>
+<tr>
+<td><strong><code>offset</code></strong></td>
+<td>Angle in degrees to offset the first slice - Try -90 or +90</td>
+</tr>
+<tr>
+<td><strong><code>border-width</code></strong></td>
+<td>Width of the border to draw around the whole pie chart, in pixels. Defaults to 0 (no border)</td>
+</tr>
+<tr>
+<td><strong><code>border-color</code></strong></td>
+<td>CSS color to use to draw the pie border. Defaults to #000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="box-chart-options">Box Chart Options</h3>
+<p>Set the &quot;type&quot; option to &quot;box&quot; to generate box plots.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>raw</code></strong></td>
+<td>If set to false (default) then the values supplied are used to caculate the box data points for you. If true then you must pre-calculate the points (see below)</td>
+</tr>
+<tr>
+<td><strong><code>show-outliers</code></strong></td>
+<td>If true (default) then outliers (values &gt; 1.5x the IQR) are marked with circles and the whiskers are placed at Q1 and Q3 instead of the least and greatest value</td>
+</tr>
+<tr>
+<td><strong><code>outlierIQR</code></strong></td>
+<td>Set the inter-quartile range multipler used to calculate values that qualify as an outlier - Defaults to 1.5</td>
+</tr>
+<tr>
+<td><strong><code>box-line-color</code></strong></td>
+<td>CSS line color used to outline the box</td>
+</tr>
+<tr>
+<td><strong><code>box-fill-color</code></strong></td>
+<td>CSS fill color used for the box</td>
+</tr>
+<tr>
+<td><strong><code>whisker-color</code></strong></td>
+<td>CSS colour used to draw the whiskers</td>
+</tr>
+<tr>
+<td><strong><code>outlier-line-color</code></strong></td>
+</tr>
+<tr>
+<td><strong><code>outlier-fill-color</code></strong></td>
+<td>CSS color used to fill the outlier circles</td>
+</tr>
+<tr>
+<td><strong><code>spot-radius</code></strong></td>
+<td>Radius in pixels to draw the outlier circles</td>
+</tr>
+<tr>
+<td><strong><code>median-color</code></strong></td>
+<td>CSS color used to draw the median line</td>
+</tr>
+<tr>
+<td><strong><code>target</code></strong></td>
+<td>If set to a value, then a small crosshair is drawn at that point to represent a target value</td>
+</tr>
+<tr>
+<td><strong><code>target-color</code></strong></td>
+<td>CSS color used to draw the target crosshair, if set</td>
+</tr>
+<tr>
+<td><strong><code>min-value</code></strong></td>
+<td>If minvalue and maxvalue are set then the scale of the plot is fixed. By default minValue and maxValue are deduced from the values supplied</td>
+</tr>
+<tr>
+<td><strong><code>max-value</code></strong></td>
+<td>See minValue</td>
+</tr>
+</tbody>
+</table>
+<p>Have a look at <a href="http://omnipotent.net/jquery.sparkline/#line">http://omnipotent.net/jquery.sparkline/#line</a>
+Note the following behavior when using parameters in tags:</p>
+<ul>
+<li><code>line</code> becomes <code>line=&quot;&quot;</code></li>
+<li><code>lineWidth</code> becomes <code>line-width=&quot;&quot;</code></li>
+<li><code>chartRangeMinX</code> becomes <code>chart-range-min-x=&quot;&quot;</code></li>
+</ul>
+<p>etc</p>
+<h3 id="further-documentation-copyright">Further Documentation &amp; Copyright</h3>
+<p>For a full list of options, please visit <a href="http://omnipotent.net/jquery.sparkline/">http://omnipotent.net/jquery.sparkline/</a></p>
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">Copyright 2014 - Qlik/Stefan Walther</p>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript + other JS files
+================================================== -->
+<script src="assets/external/jquery/jquery.min.js"></script>
+<script src="assets/external/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/external/bootstrap/bootstrap.min.js"></script>
+<script src="assets/external/jquery.tocify/jquery.tocify.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56114350-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

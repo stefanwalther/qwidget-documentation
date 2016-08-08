@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<title>
+    qWidget | Download
+</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="assets/css/theme.css" />
+<link rel="stylesheet" href="assets/css/customStyle.css" />
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script language="javascript">
+
+    // Add a target="_blank" to all external links
+    $(function() {
+        $( 'a[href^="http://"],[href^="https://"]' )
+                .attr( 'target','_blank' )
+                .addClass( 'external_link' )
+        ;
+    });
+</script>
+
+
+<body >
+
+<!-- Top Navigation -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="default.html"><span class="wi-q">q</span><span class="wi-widget">Widget</span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <!-- Getting Started -->
+                <!-- Todo: Better way would be using contains, but does not work in the current version -->
+                <li class="dropdown " >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Tutorials</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Basics.html">Getting Started - Basics</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-General.html">Data Binding - Introduction</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-HyperCubes.html">Data Binding - Working with HyperCubes</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.HtmlStructure.html">Structure of your qWidget</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Styling.html">Styling your qWidgets</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Resources</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="resources.UsefulResources.html">Useful Resources</a></li>
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">FAQ</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.PerformanceImpact.html">Performance Impact</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.RepositoryConcept.html">The Repository Concept</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- HowTo -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To ... <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.ConditionalDisplay.html">Implement Show Conditions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.MiniChart.html">Use Minicharts in Tables</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.UseSliderTables.html">Use the Slider Component (with Tables)</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- Components -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiAction.html">Actions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiBootstrap.html">Bootstrap Style</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiButtonGroup.html">Button Group</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDatepicker.html">Datepicker</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDebug.html">Debug Component</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiLinkedObject.html">Linked (Embedded) Objects</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMediaBox.html">MediaBox (Video, WebPage, ...)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMinichart.html">MiniCharts</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiProgressbar.html">Progressbar</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSlider.html">Slider</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSysInfo.html">Sys Info (Meta Data)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiTab.html">Tab</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- About -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.ContactSupport.html">Contact &amp; Support</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Contribute.html">Contribute</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.KnownIssues.html">Known Issues</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Roadmap.html">Roadmap</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class=" active"><a href="download.default.html">Download</a></li>
+            </ul>
+
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div id="content" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="toc" class="bs-sidebar affix bs-sidenav hidden-print"></div>
+        </div>
+        <div class="col-md-9 generatedMarkdown">
+            <h1>Download</h1>
+            <h2 id="latest-qlik-sense-3-x-build">Latest Qlik Sense 3.x Build</h2>
+<ul>
+<li><strong>Version 0.26.00</strong></li>
+<li><strong>Date:</strong> 2016-08-08**</li>
+<li><strong>Fixes:</strong><ul>
+<li>Fixed an issue of qWidget destroying the default fonts in Qlik Sense 3.0</li>
+</ul>
+</li>
+<li>The latest version can be downloaded from the <a href="https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta">Qlik Community - qWidget Limited Beta Forum</a></li>
+</ul>
+<h2 id="latest-qlik-sense-2-x-build">Latest Qlik Sense 2.x Build</h2>
+<ul>
+<li><strong>Version 0.25.00</strong></li>
+<li><strong>Date:</strong> 2016-02-29</li>
+<li><strong>Fixes:</strong><ul>
+<li>Fixed a flickering issue in Qlik Sense 2.2</li>
+</ul>
+</li>
+<li><strong>Tested On:</strong><ul>
+<li>Qlik Sense Version: 2.2, 2.1.1</li>
+<li>Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)</li>
+</ul>
+</li>
+<li>The latest version can be downloaded from the <a href="https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta">Qlik Community - qWidget Limited Beta Forum</a></li>
+</ul>
+<hr>
+<h2 id="change-log">Change Log</h2>
+<h3 id="version-0-23-01">Version 0.23.01</h3>
+<ul>
+<li><strong>Date:</strong> 2015-05-12</li>
+<li><strong>New:</strong><ul>
+<li>Removed &quot;not supported&quot; message completely and tested for the upcoming Qlik Sense 2.0 release</li>
+</ul>
+</li>
+<li><strong>Tested On:</strong><ul>
+<li>Qlik Sense Version: 1.*, 2.0</li>
+<li>Qlik Sense Server: 1.*, 2.0</li>
+<li>Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)</li>
+<li>Not tested yet: Safari</li>
+</ul>
+</li>
+<li>The latest version can be downloaded from the <a href="https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta">Qlik Community - qWidget Limited Beta Forum</a></li>
+</ul>
+<h3 id="version-0-23-00">Version 0.23.00</h3>
+<ul>
+<li><strong>Date:</strong> 2015-05-06</li>
+<li><strong>Tested On:</strong><ul>
+<li>Qlik Sense Version: 1.*, 2.0</li>
+<li>Qlik Sense Server: 1.*, 2.0</li>
+<li>Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)</li>
+<li>Not tested yet: Safari</li>
+</ul>
+</li>
+<li>The latest version can be downloaded from the <a href="https://community.qlik.com/community/qlik_beta_programs/qwidget_limited_public_beta">Qlik Community - qWidget Limited Beta Forum</a></li>
+</ul>
+<h3 id="version-0-21-05">Version 0.21.05</h3>
+<ul>
+<li><strong>Date:</strong> 2014-12-17</li>
+<li><strong>Tested On:</strong><ul>
+<li>Qlik Sense Version: 1.0.*, 1.1</li>
+<li>Qlik Sense Server: 1.0.*, 1.1</li>
+<li>Browser: Chrome + Internet Explorer 11 + Firefox (some minor limitations)</li>
+<li>Not tested yet: Safari</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-21-05">Version 0.21.05</h3>
+<ul>
+<li>Date: 2014-12-17</li>
+<li>Improvements:<ul>
+<li>Better quality of the generated screenshot when publishing a qWidget</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-21-04">Version 0.21.04</h3>
+<ul>
+<li>Date: 2014-12-16</li>
+<li>Improvements:<ul>
+<li>Better loading &amp; error messages</li>
+<li>Improved loading of icons in the qWidget Editor</li>
+<li>Added ability to search for snippets.</li>
+<li>Added support for upcoming version 1.1 of Qlik Sense</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-21-01">Version 0.21.01</h3>
+<ul>
+<li>Date: 2014-12-12</li>
+<li>Improvements<ul>
+<li>Usage of snippets and qWidgets</li>
+<li>All modal dialogs can now also be closed by pressing the Esc key</li>
+<li>The badge &quot;Not approved&quot; in the list of qWidgets is only displayed if the qWidget is not marked as &quot;private&quot;</li>
+<li>Optimizations to the repository to prevent lock-out scenarios if the user session expires.</li>
+<li>Some minor layout improvements</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-20-04">Version 0.20.04</h3>
+<ul>
+<li>Date: 2014-12-08</li>
+<li>Initial version for the Limited Public Beta of qWidget</li>
+<li>Changes:<ul>
+<li>Documentation has been moved to (<a href="http://doc.qwidget.mod.bz/">http://doc.qwidget.mod.bz/</a>)</li>
+</ul>
+</li>
+</ul>
+<h2 id="change-log-before-limited-public-beta">Change Log before Limited Public Beta</h2>
+<h3 id="version-0-14-02">Version 0.14.02</h3>
+<ul>
+<li><strong>Bugfixes:</strong><ul>
+<li>Loading from the Qlik Internal Repository didn&#39;t work</li>
+<li>Hypercube-Shorthand notation didn&#39;t work properly.</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-14-01">Version 0.14.01</h3>
+<ul>
+<li><strong>Minor Update:</strong><ul>
+<li>Removed message in case of MS10</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-13-03">Version 0.13.03</h3>
+<ul>
+<li><strong>Minor Changes:</strong><ul>
+<li>Updated editor source files (ACE editor)</li>
+<li>Some performance optimization in the HyperCube shorthand notation</li>
+</ul>
+</li>
+<li><strong>Bugfixes:</strong><ul>
+<li>Minor changes to enable qWidget also for Qlik Sense MS9</li>
+<li>If qWidget has been added to the master-items, now only the master-item can be edited</li>
+<li>Minor bugfixes to <code>wiDatePicker</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-13-00">Version 0.13.00</h3>
+<p>Date: 2014-10-26</p>
+<ul>
+<li><strong>Features / Improvements:</strong><ul>
+<li>New component <code>wi-datepicker</code></li>
+</ul>
+</li>
+<li><strong>Bugfixes:</strong><ul>
+<li>Some major bugfixes to get qWidget working in Firefox</li>
+<li>Embedding linked-objects into tabs should now work by default</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-12-03">Version 0.12.03</h3>
+<p>Date: 2014-10-22</p>
+<ul>
+<li><strong>Features / Improvements:</strong><ul>
+<li>Improved <code>wi-sys-info</code> ...<ul>
+<li>Added the ability to get the Master Objects with <code>wi-sys-info</code></li>
+<li>Added details to <code>measures</code>, <code>dimensions</code> and <code>masterobjects</code> in the default output of <code>wi-sys-info</code></li>
+</ul>
+</li>
+<li>Enabled <code>wi-action</code> in <code>wi-tab</code></li>
+</ul>
+</li>
+<li><strong>Bugfixes:</strong><ul>
+<li>Fixed a lot of errors in the documentation</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-12-01">Version 0.12.01</h3>
+<p>Date: 2014-10-16</p>
+<ul>
+<li><strong>Features:</strong><ul>
+<li>Improvements to <code>wi-sys-info</code>: Sheets are now returned in the correct order</li>
+<li>Improvements to <code>wi-action</code>: <code>gotoSheet</code>, <code>nextSheet</code> &amp; <code>prevSheet</code> work now much better (without a hard browser refresh)</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-12-0">Version 0.12.0</h3>
+<p>Date: 2014-10-13</p>
+<ul>
+<li><strong>Features:</strong><ul>
+<li>New <code>wi-buttongroup</code> component</li>
+</ul>
+</li>
+<li><strong>Breaking Changes:</strong><ul>
+<li>Renamed wiSlider&#39;s property <code>bind-qs</code> to <code>bind-qs-var</code></li>
+<li>Renamed wiSlider&#39;s property <code>bind-qs-min</code> to <code>bind-qs-var-min</code></li>
+<li>Renamed wiSlider&#39;s property <code>bind-qs-max</code> to <code>bind-qs-var-min</code></li>
+<li>Renamed wiSlider&#39;s property <code>type</code> to <code>design</code></li>
+<li>Renamed wiProgressbar&#39;s property <code>type</code> to <code>design</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-11-03">Version 0.11.03</h3>
+<p>Date: 2014-10-06</p>
+<ul>
+<li><strong>Bugfixes:</strong><ul>
+<li>Several minor bugfixes for Qlik Sense Server 1.0</li>
+<li>On the Qlik Sense Server assets from local repository couldn&#39;t be loaded (.less is not an allowed media-type)</li>
+<li>New qWidget couldn&#39;t be saved</li>
+<li>Prevent calling the qWidget-Webservice in View-Mode</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-11-01-0-11-00">Version 0.11.01 + 0.11.00</h3>
+<p>Date: 2014-09-22</p>
+<ul>
+<li>Several Bugfixes for Qlik Sense Server 1.0</li>
+</ul>
+<h3 id="-version-0-10-0-"><strong>Version 0.10.0</strong></h3>
+<p>Date: 2014-08-26</p>
+<ul>
+<li><strong>Tested On:</strong><ul>
+<li>Qlik Sense Version/Desktop: 0.96</li>
+<li>Qlik Sense Server: 0.95</li>
+<li>Browser: Chrome + Internet Explorer 11</li>
+</ul>
+</li>
+<li><strong>New Features</strong>:<ul>
+<li><strong>New Components</strong>:<ul>
+<li><code>wi-progressbar</code></li>
+</ul>
+</li>
+<li><strong>Snippets</strong>:<ul>
+<li>Snippets for adding a progressbar</li>
+<li>Snippet for using the shorthand notation for binding to a HyperCube</li>
+</ul>
+</li>
+<li><strong>Documentation</strong><ul>
+<li>All changes described above</li>
+<li>Rebuild documentation for allowing deep-linking to specific page</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-9-03">Version 0.9.03</h3>
+<p>Date: 2014-08-07</p>
+<ul>
+<li><strong>Tested On:</strong><ul>
+<li>Qlik Sense Version/Desktop: 0.96</li>
+<li>Qlik Sense Server: 0.95</li>
+<li>Browser: Chrome + Internet Explorer 11</li>
+</ul>
+</li>
+<li><strong>New Features:</strong><ul>
+<li>New Components:<ul>
+<li><code>wi-slider</code><ul>
+<li>Manipulate one or two Qlik Sense variables with a slider</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Component Improvements:<ul>
+<li><code>wiSysInfo</code><ul>
+<li>Returning the icon for the visualization (<code>visualizationTypeIcon</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Documentation<ul>
+<li>All changes described above</li>
+</ul>
+</li>
+<li>Snippets<ul>
+<li>Sample snippets for <code>wi-slider</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Changes</strong><ul>
+<li>Better user experience when filtering qWidgets from a repository</li>
+</ul>
+</li>
+<li><strong>Post-Build Fixes:</strong><ul>
+<li>0.9.03: Added backwards compatibility for gotoSheet</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-8-00">Version 0.8.00</h3>
+<p>Date: 2014-08-04</p>
+<ul>
+<li><strong>Tested On:</strong><ul>
+<li>Qlik Sense Version/Desktop: 0.96</li>
+<li>Qlik Sense Server: 0.95</li>
+<li>Browser: Chrome + Internet Explorer 11</li>
+</ul>
+</li>
+<li><strong>New Features:</strong><ul>
+<li>Enabled support for Qlik Sense Server 0.95</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-7-20-0-7-19-">Version 0.7.20 (0.7.19)</h3>
+<p>Date: 2014-07-31</p>
+<ul>
+<li><strong>Qlik Sense Version:</strong> 0.96 / Qlik Sense Desktop</li>
+<li><strong>Qlik Sense Server Support:</strong> Not tested intensively, yet! <strong>Will probably not work!!</strong></li>
+<li><strong>Browser:</strong> Tested mainly in Chrome + Internet Explorer 11</li>
+<li><strong>New Features:</strong><ul>
+<li>New Components:<ul>
+<li><code>wi-debug</code> - List the available object tree more easily</li>
+<li><code>wi-tab</code> - To create Boostrap based tab container.</li>
+</ul>
+</li>
+<li>Component Improvements:<ul>
+<li><code>wi-sys-info</code> offers a new content type <code>visualizations</code> to retrieve all visualizations in the current app</li>
+<li><code>wi-minichart</code> can now also be used as an attribute.</li>
+<li><code>wi-bootstrap</code> can now also be used as an element.</li>
+<li><code>wi-bootstrap</code> is not an experimental feature anymore.</li>
+<li><code>wi-action</code>:<ul>
+<li>Multiple actions for the same event are now possible (separated with a semicolon)</li>
+<li>New action <code>field.selectAll</code></li>
+<li>New action <code>field.select</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>New <strong>IMPORTANT</strong> addition to the Shorthand Notation when working with HyperCubes<ul>
+<li><code>wi.colHeaders()</code></li>
+</ul>
+</li>
+<li>Ability to change the font-size in the editors (mainly meant for demonstrating qWidget using a projector)</li>
+</ul>
+</li>
+<li><strong>Bugfixes:</strong><ul>
+<li><code>wi-linked-object</code><ul>
+<li>100% Rewritten </li>
+<li>Will be redrawn automatically if the screen size changes</li>
+<li>Removed property height and width, can now be done with 100% pure CSS</li>
+<li>Solved performance issues in qWidget Edit-Mode</li>
+<li>Added two advanced examples in the documentation</li>
+</ul>
+</li>
+<li>v0.7.20: in v0.7.19 the Publish dialog remains empty</li>
+</ul>
+</li>
+<li><strong>Documentation</strong><ul>
+<li>All new features/changes/bugfixes mentioned above</li>
+<li>Updated roadmap</li>
+</ul>
+</li>
+<li><strong>New Code-Snippets</strong><ul>
+<li>Some <code>wi-tab</code> samples</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-6-6">Version: 0.6.6</h3>
+<p>Date: 2014-07-14</p>
+<ul>
+<li><strong>Qlik Sense Version:</strong> 0.95/0.96</li>
+<li><strong>Browser:</strong> Tested mainly in Chrome + Internet Explorer 11</li>
+<li><strong>New Features:</strong><ul>
+<li>New Actions:<ul>
+<li><code>variable.create</code></li>
+<li><code>variable.setContent</code></li>
+<li><code>field.clear</code></li>
+<li><code>field.clearOther</code></li>
+<li><code>field.lock</code></li>
+<li><code>field.selectAlternative</code></li>
+<li><code>field.selectExcluded</code></li>
+<li><code>field.selectMatch</code></li>
+<li><code>field.selectPossible</code></li>
+<li><code>field.toggleSelect</code></li>
+<li><code>field.unlock</code></li>
+</ul>
+</li>
+<li>New Component:<ul>
+<li><code>wiBootstrap</code> - Include Bootstrap in your qWidget (<strong>experimental</strong>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Optimizations:</strong><ul>
+<li>Annotations are disabled in the Html- &amp; CSS/Less-Editor (=&gt; better performance)</li>
+</ul>
+</li>
+<li><strong>Changes:</strong><ul>
+<li><strong>wi-linked-object</strong>: <code>type</code> is now <code>qs</code> by default </li>
+</ul>
+</li>
+<li><strong>Bugfixes:</strong><ul>
+<li><strong>wi-linked-object</strong>: Prevent self-referencing</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-5-1">Version: 0.5.1</h3>
+<p>Date: 2014-07-06</p>
+<ul>
+<li><strong>Qlik Sense Version:</strong> 0.95/0.96</li>
+<li><strong>Browser:</strong> Tested mainly in Chrome + Internet Explorer 11</li>
+<li><strong>New Features:</strong><ul>
+<li>Added several new actions to <strong><code>wi-action</code></strong> (see documentation):<ul>
+<li><code>gotoSheet</code></li>
+<li><code>bookmark.create</code></li>
+<li><code>bookmark.apply</code></li>
+<li><code>bookmark.delete</code></li>
+</ul>
+</li>
+<li>Tested and enabled for Qlik Sense Desktop (tested with version 0.96)</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-4-15">Version: 0.4.15</h3>
+<p>Date: 2014-07-03</p>
+<ul>
+<li><strong>Qlik Sense Version:</strong> 0.95</li>
+<li><strong>Browser:</strong> Tested mainly in Chrome &amp; Internet Explorer 11</li>
+<li><strong>Bugfixes:</strong><ul>
+<li>Fixed a major issue with styles (styles disappeared in qWidget-NormalView after some selections have been made in the document)</li>
+<li>Some minor performance improvements</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-4-13">Version 0.4.13</h3>
+<p>Date: 2014-07-03</p>
+<ul>
+<li><strong>Qlik Sense Version:</strong> 0.95</li>
+<li><strong>Browser:</strong> Tested mainly in Chrome &amp; Internet Explorer 11</li>
+<li><strong>New Features:</strong><ul>
+<li>Tested with Internet Explorer 11</li>
+<li>Works now for both Qlik Sense 0.90 and Qlik Sense Desktop 1.0 (0.96)</li>
+<li>Component <strong><code>wi-linked-object</code></strong> to embed existing objects into your qWidget</li>
+<li>Component <strong><code>wi-sys-info</code></strong> to retrieve system meta data from the QIX engine (like a list of apps, sheets, objects, bookmarks, etc.)</li>
+</ul>
+</li>
+<li><strong>Documentation:</strong><ul>
+<li>Documentation for <code>wi-linked-object</code></li>
+<li>Documentation for <code>wi-sys-info</code></li>
+</ul>
+</li>
+<li><strong>New Snippets:</strong><ul>
+<li>&quot;Working with HyperCubes: Shorthand Notation Examples&quot;</li>
+</ul>
+</li>
+<li><strong>Bug Fixes:</strong><ul>
+<li>Major performance improvements</li>
+<li>Fixed memory leak in qWidget-Editor when working either a long time or with large Html/Css code-blocks</li>
+</ul>
+</li>
+<li><strong>Breaking Changes:</strong><ul>
+<li>Doesn&#39;t work anymore for Qlik Sense Personal Edition 0.9 (existing qWidgets from 0.9 will continue to work though)</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-3-1">Version 0.3.1</h3>
+<p>Date: 2014-06-25</p>
+<ul>
+<li><strong>Qlik Sense Version:</strong> 0.95</li>
+<li><strong>Browser:</strong> Tested mainly in Chrome</li>
+</ul>
+<h3 id="version-0-2-0">Version 0.2.0</h3>
+<p>Date: 2014-06-22</p>
+<ul>
+<li>Qlik Sense Version: 0.90</li>
+<li><ul>
+<li>New Features:<ul>
+<li><strong>MediaBox</strong> Directive for integrating web-pages and videos</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Documentation:<ul>
+<li>New Page: Getting Started &gt; Positioning<ul>
+<li>General Positioning</li>
+<li>Why JavaScript is not allowed in qWidgets</li>
+</ul>
+</li>
+<li>MediaBox Directive documentation</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-1-1">Version 0.1.1</h3>
+<p>Date: 2014-06-20</p>
+<ul>
+<li>Qlik Sense Version: 0.90</li>
+<li>Improvements:<ul>
+<li>Reduced loading-time by about 25%</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-0-1-0">Version 0.1.0</h3>
+<p>Date: 2014-06-19</p>
+<ul>
+<li>Internal Alpha</li>
+</ul>
+<h2 id="about-versioning">About Versioning</h2>
+<h3 id="semantic-versioning">Semantic Versioning</h3>
+<p>qWidget uses Semantic Versioning: (<a href="http://semver.org/">http://semver.org/</a>)</p>
+<h3 id="new-version-notification">New Version Notification</h3>
+<p>If you are connected to the Internet, you will be notified of new versions in the qWidget Edit-Mode.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">Copyright 2014 - Qlik/Stefan Walther</p>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript + other JS files
+================================================== -->
+<script src="assets/external/jquery/jquery.min.js"></script>
+<script src="assets/external/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/external/bootstrap/bootstrap.min.js"></script>
+<script src="assets/external/jquery.tocify/jquery.tocify.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56114350-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

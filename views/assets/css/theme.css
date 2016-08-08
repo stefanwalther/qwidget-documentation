@@ -1,0 +1,32 @@
+/* Always enable the vertical scrollbar */
+html {
+    position:relative;
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    min-height: 100%;
+}
+
+body {
+    color:#666;
+    margin-bottom:60px;
+    min-height: 100%;
+}
+
+
+
+.container {
+    width:1024px;
+}
+
+/* Main Content Body */
+#content {
+    /*min-height: 100%;*/
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -50px;
+
+    /* Pad bottom by footer height */
+    padding: 80px 0 60px;
+}
+
+

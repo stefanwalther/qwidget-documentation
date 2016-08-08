@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<title>
+    qWidget | Getting Started - Basics
+</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="assets/css/theme.css" />
+<link rel="stylesheet" href="assets/css/customStyle.css" />
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script language="javascript">
+
+    // Add a target="_blank" to all external links
+    $(function() {
+        $( 'a[href^="http://"],[href^="https://"]' )
+                .attr( 'target','_blank' )
+                .addClass( 'external_link' )
+        ;
+    });
+</script>
+
+
+<body >
+
+<!-- Top Navigation -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="default.html"><span class="wi-q">q</span><span class="wi-widget">Widget</span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <!-- Getting Started -->
+                <!-- Todo: Better way would be using contains, but does not work in the current version -->
+                <li class="dropdown active" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Tutorials</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Basics.html">Getting Started - Basics</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-General.html">Data Binding - Introduction</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-HyperCubes.html">Data Binding - Working with HyperCubes</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.HtmlStructure.html">Structure of your qWidget</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Styling.html">Styling your qWidgets</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Resources</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="resources.UsefulResources.html">Useful Resources</a></li>
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">FAQ</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.PerformanceImpact.html">Performance Impact</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.RepositoryConcept.html">The Repository Concept</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- HowTo -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To ... <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.ConditionalDisplay.html">Implement Show Conditions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.MiniChart.html">Use Minicharts in Tables</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.UseSliderTables.html">Use the Slider Component (with Tables)</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- Components -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiAction.html">Actions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiBootstrap.html">Bootstrap Style</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiButtonGroup.html">Button Group</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDatepicker.html">Datepicker</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDebug.html">Debug Component</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiLinkedObject.html">Linked (Embedded) Objects</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMediaBox.html">MediaBox (Video, WebPage, ...)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMinichart.html">MiniCharts</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiProgressbar.html">Progressbar</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSlider.html">Slider</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSysInfo.html">Sys Info (Meta Data)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiTab.html">Tab</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- About -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.ContactSupport.html">Contact &amp; Support</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Contribute.html">Contribute</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.KnownIssues.html">Known Issues</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Roadmap.html">Roadmap</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class=" "><a href="download.default.html">Download</a></li>
+            </ul>
+
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div id="content" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="toc" class="bs-sidebar affix bs-sidenav hidden-print"></div>
+        </div>
+        <div class="col-md-9 generatedMarkdown">
+            <h1>Getting Started - Basics</h1>
+            <h2 id="introduction">Introduction</h2>
+<p>The basic idea behind qWidget is that you should be able to create <strong>new visualizations without the need for programming in JavaScript</strong> by leveraging Qlik Sense&#39; extension concept. By just using HTML &amp; CSS you can create completely new and astonishing objects in Qlik Sense which behave like all other objects and even more:</p>
+<p>Visualizations built with qWidget can be</p>
+<ul>
+<li>Created by just copying HTML &amp; CSS from one of the thousands of libraries out there ...</li>
+<li>Copied from one app to another app</li>
+<li>Added to the master library and re-used from there</li>
+<li>Used in Story Telling</li>
+<li>Used across apps and even installations of Qlik Sense</li>
+<li>and more ...</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Installation of qWidget is straightforward since qWidget is &quot;just&quot; an extension:</p>
+<ul>
+<li><a href="http://bit.ly/qWidget-Download">Download the extension</a><ul>
+<li>Unzip the .zip file</li>
+</ul>
+</li>
+<li>Extract the content of the .zip-file to the folder folder <code>...\Users\[UserName]\Documents\Qlik\Sense\Extensions\qWidget\</code></li>
+<li>(In some cases it is necessary to close and re-open the Qlik Sense client)</li>
+<li>You should now see a new object/item in the list of objects under &quot;Charts&quot; called &quot;qWidget&quot;  </li>
+</ul>
+<h2 id="create-a-new-qwidget">Create a new qWidget</h2>
+<p>If you want to create a new qWidget, just drag and drop it from the list of available Charts.
+Configuration of Dimensions and Measures works exactly the same as for any other object type.</p>
+<p>Note that in the list of properties there are some qWidget specific properties in the &quot;Appearance&quot; section:</p>
+<ul>
+<li>qWidget Variables</li>
+</ul>
+<h2 id="areas">Areas</h2>
+<p>There are three main areas in qWidget extensions:</p>
+<ul>
+<li>The &quot;Normal View&quot; when qWidgets are just rendered</li>
+<li>The &quot;qWidget Editor&quot;</li>
+<li>The &quot;qWidget Loader&quot;</li>
+</ul>
+<h2 id="the-qwidget-editor">The qWidget Editor</h2>
+<p>If you hover over a newly added qWidget object an edit icon will be shown. Click on this icon and the edit mode of the qWidget extension will be opened:</p>
+<blockquote>
+<p><img src="img/EditIcon.png" alt=""></p>
+</blockquote>
+<p>As soon as you click on the icon you&#39;ll see the qWidget-Editor:</p>
+<blockquote>
+<p><img src="img/WidgetEditor.png" alt=""></p>
+</blockquote>
+<p>There are several areas in the Widget Editor:</p>
+<ol>
+<li><strong>Html-Editor</strong><br>Enter your Html code here</li>
+<li><strong>CSS-/Less-Editor</strong><br>Enter your CSS-/Less code here</li>
+<li><strong>Live Preview</strong><br>Displays immediately the live preview of your qWidget.</li>
+</ol>
+<blockquote>
+<p><img src="img/WidgetEditor_Areas.png" alt=""></p>
+</blockquote>
+<h3 id="variables">Variables</h3>
+<p>You can either insert variables manually or use the &quot;Variable Inserter&quot; tool:</p>
+<p>Click on the following button to open the tool:</p>
+<blockquote>
+<p><img src="img/Button_VariableInserter.png" alt=""></p>
+</blockquote>
+<p>Then the following window will appear which displays all variables you can use in the current object:</p>
+<blockquote>
+<p><img src="img/Popup_VariableInserter.png" alt=""></p>
+</blockquote>
+<p>More detailed information on how to use variables and how data-binding works in qWidget can be found in the section &quot;Documentation - Data Binding&quot;.</p>
+<h3 id="code-snippets">Code Snippets</h3>
+<p>Looking for a specific code-snippet?
+Just open the &quot;Code Snippets&quot; window and insert a specific snippet at the current cursor position:</p>
+<p>Button to open the Code Snippet dialog:</p>
+<blockquote>
+<p><img src="img/Button_Snippets.png" alt=""></p>
+</blockquote>
+<p>Then you&#39;ll see the following dialog:</p>
+<blockquote>
+<p><img src="img/Popup_Snippets.png" alt=""></p>
+</blockquote>
+<div class="alert alert-success"><strong>Auto-Update Snippets:</strong><br>If you are connected to the Internet and therefore to the qWidget-Repository the list of snippets will be updated automatically.</div>
+
+<h3 id="icons">Icons</h3>
+<p>If you want to use icons in your qWidget use the &quot;Icons&quot; button to open the dialog which helps you to insert an icon:</p>
+<p><img src="img/Popup_Icons.png" alt=""></p>
+<h3 id="using-the-qwidgets">Using the qWidgets</h3>
+<p>If you want to apply what you have done, click on the &quot;Apply Visualization&quot; button, otherwise just close the editor with the &quot;X Close qWidget&quot; at the top right corner.</p>
+<h3 id="publishing">Publishing</h3>
+<p>If you are connected to the Internet you can publish your qWidget to the qWidget-Repository:</p>
+<blockquote>
+<p><img src="img/Button_PublishToCloud.png" alt=""></p>
+</blockquote>
+<p><img src="img/Popup_Publish.png" alt=""></p>
+<h2 id="the-qwidget-loader">The qWidget Loader</h2>
+<p>The qWidget-Loader connects you to the qWidget Repository, which is a central repository of assets for the qWidget extension.</p>
+<p>Leveraging the qWidget Repository allows you to:</p>
+<ul>
+<li>Load new visualizations (with code) from an app-independent repository</li>
+<li>Publish your qWidgets for later usage</li>
+<li>Share qWidgets with colleagues</li>
+<li>Load the latest Code-snippets </li>
+<li>and much more ...</li>
+</ul>
+<h3 id="open-the-qwidget-loader">Open the qWidget Loader</h3>
+<p>Click on &quot;Load Widget&quot; in the top menu and the qWidget Loader will appear.</p>
+<blockquote>
+<p><img src="img/WidgetLoader_LocalRepository.png" alt=""></p>
+</blockquote>
+<p>By default you&#39;ll see some qWidgets from your local qWidget Repository. This local repository is delivered as a part of the qWidget extension.</p>
+<h3 id="how-to-use-the-qwidget-loader">How to use the qWidget Loader</h3>
+<p>As soon as you click on &quot;<strong>Preview</strong>&quot; you&#39;ll see a preview of the qWidget in the right pane. If you then click &quot;Download Visualization&quot; the underlying HTML &amp; CSS-/Less-code will be applied to the Widget Editor (you are then not connected anymore to the online repository).</p>
+<blockquote>
+<p><img src="img/WidgetLoader_Preview.png" alt=""></p>
+</blockquote>
+<h3 id="connecting-to-the-online-repository">Connecting to the Online-Repository</h3>
+<p>If you change the repository to &quot;Limited Public Beta Repository (ONLINE)&quot; you&#39;ll see that the list of qWidgets will be updated:</p>
+<blockquote>
+<p><img src="img/WidgetLoader_OnlineRepository.png" alt=""></p>
+</blockquote>
+<h2 id="qwidget-extension-updates">qWidget Extension Updates</h2>
+<p>qWidget will automatically check if there are updates available and display the following indicator in the bottom right corner if there is a newer version available:</p>
+<p><img src="img/VersionChecker.png" alt=""></p>
+<p>Click on it and you&#39;ll get some information about the new version available.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">Copyright 2014 - Qlik/Stefan Walther</p>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript + other JS files
+================================================== -->
+<script src="assets/external/jquery/jquery.min.js"></script>
+<script src="assets/external/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/external/bootstrap/bootstrap.min.js"></script>
+<script src="assets/external/jquery.tocify/jquery.tocify.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56114350-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

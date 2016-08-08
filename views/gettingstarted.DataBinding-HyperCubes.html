@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<title>
+    qWidget | Data Binding - Working with HyperCubes
+</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="assets/css/theme.css" />
+<link rel="stylesheet" href="assets/css/customStyle.css" />
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script language="javascript">
+
+    // Add a target="_blank" to all external links
+    $(function() {
+        $( 'a[href^="http://"],[href^="https://"]' )
+                .attr( 'target','_blank' )
+                .addClass( 'external_link' )
+        ;
+    });
+</script>
+
+
+<body >
+
+<!-- Top Navigation -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="default.html"><span class="wi-q">q</span><span class="wi-widget">Widget</span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <!-- Getting Started -->
+                <!-- Todo: Better way would be using contains, but does not work in the current version -->
+                <li class="dropdown active" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Tutorials</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Basics.html">Getting Started - Basics</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-General.html">Data Binding - Introduction</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.DataBinding-HyperCubes.html">Data Binding - Working with HyperCubes</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.HtmlStructure.html">Structure of your qWidget</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="gettingstarted.Styling.html">Styling your qWidgets</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Resources</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="resources.UsefulResources.html">Useful Resources</a></li>
+                                
+                            
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-header">FAQ</li>
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.PerformanceImpact.html">Performance Impact</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="faq.RepositoryConcept.html">The Repository Concept</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- HowTo -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To ... <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.ConditionalDisplay.html">Implement Show Conditions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.MiniChart.html">Use Minicharts in Tables</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="howto.UseSliderTables.html">Use the Slider Component (with Tables)</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- Components -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiAction.html">Actions</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiBootstrap.html">Bootstrap Style</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiButtonGroup.html">Button Group</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDatepicker.html">Datepicker</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiDebug.html">Debug Component</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiLinkedObject.html">Linked (Embedded) Objects</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMediaBox.html">MediaBox (Video, WebPage, ...)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiMinichart.html">MiniCharts</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiProgressbar.html">Progressbar</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSlider.html">Slider</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiSysInfo.html">Sys Info (Meta Data)</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="component.wiTab.html">Tab</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+                <!-- About -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.ContactSupport.html">Contact &amp; Support</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Contribute.html">Contribute</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.KnownIssues.html">Known Issues</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="about.Roadmap.html">Roadmap</a></li>
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                            
+                                
+                            
+                        
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class=" "><a href="download.default.html">Download</a></li>
+            </ul>
+
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div id="content" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="toc" class="bs-sidebar affix bs-sidenav hidden-print"></div>
+        </div>
+        <div class="col-md-9 generatedMarkdown">
+            <h1>Data Binding - Working with HyperCubes</h1>
+            <h2 id="introduction">Introduction</h2>
+<p>If you are defining <strong>Measures and Dimensions</strong> in your qWidget object (like in any other Qlik Sense object) the result is an internal <strong>data table</strong> exposed to the object.
+This data table can and should certainly be used in qWidgets.
+There are two ways to bind your HTML code to the internal data table of your object:</p>
+<ul>
+<li>The <strong>default way</strong>, accessing the so called HyperCube (which is the internal data table mentioned above) directly as an Extension developer would.</li>
+<li>The (more convenient) way of using the <strong>shorthand notation</strong> provided by qWidget which makes is less complex to work with data.</li>
+</ul>
+<h3 id="which-variant-should-i-choose-">Which Variant Should I Choose?</h3>
+<p>It&#39;s absolutely dependent on you, there is (nearly) no performance impact.</p>
+<h2 id="the-default-way">The Default Way</h2>
+<p>If you are choosing the default way you should be aware of some of the basic objects exposed to the current scope of your qWidget and how you can use them:</p>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>layout.qHyperCube</code></strong></td>
+<td>Returns the representation of the <strong>HyperCube</strong> (data table exposed to your qWidget)</td>
+</tr>
+<tr>
+<td><strong><code>layout.qHyperCube.qDimensionInfo</code></strong></td>
+<td>Get the object array of defined <strong>dimensions</strong></td>
+</tr>
+<tr>
+<td><strong><code>layout.qHyperCube.qMeasureInfo</code></strong></td>
+<td>Get the object array of defined <strong>measures</strong></td>
+</tr>
+<tr>
+<td><strong><code>layout.qHyperCube.qDataPages[0].qMatrix</code></strong></td>
+<td>Get the object array of the <strong>data table</strong></td>
+</tr>
+<tr>
+<td><strong><code>layout.qHyperCube.qDataPages[0].qMatrix[0]</code></strong></td>
+<td>Get the object array of the <strong>first row</strong></td>
+</tr>
+<tr>
+<td><strong><code>layout.qHyperCube.qDataPages[0].qMatrix[0][0]</code></strong></td>
+<td>Get the object array of the <strong>first column in the first row</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-learn-this-stuff-">How to Learn this Stuff?</h3>
+<p>The easiest way to get confident with Qlik Sense&#39; internal representation of the data is to let qWidget do the work:</p>
+<p><strong><em>Example:</em></strong>
+Just enter {{layout.qHyperCube.qDataPage[0].qMatrix[0][0]}} into qWidget&#39;s Html-Editor and you will see the following result in the Live Preview:</p>
+<p><img src="img/DataBinding_DefaultWay_PreviewOutput.png" alt=""></p>
+<p>This tells us that for the <strong>1st row&quot; and </strong>3rd** columns we have the following properties available:</p>
+<ul>
+<li><code>qText</code>: The text representation of the cell&#39;s value</li>
+<li><code>qNum</code>: The numeric representation of the cell&#39;s value</li>
+</ul>
+<p>By knowing this, we can now change the binding a little bit if we want to use the text representation in our qWidget:</p>
+<p><img src="img/DataBinding_DefaultWay_PreviewOutput_Detailed.png" alt=""></p>
+<h3 id="default-way-examples">Default Way Examples</h3>
+<p>All the examples are based on the following dimensions and expressions defined for your qWidget (based on the default demo script, generated by <code>Ctrl+0+0</code> in the Script Editor)</p>
+<p><strong><em>Dimensions:</em></strong></p>
+<ul>
+<li><code>Dim1</code></li>
+<li><code>Dim2</code></li>
+</ul>
+<p><strong><em>Expressions:</em></strong></p>
+<ul>
+<li><code>Sum(Expression1)</code></li>
+<li><code>Sum(Expression2)</code></li>
+</ul>
+<p>So the data table passed to qWidget looks as follows:</p>
+<p><img src="img/DataBinding_DefaultWay_InternalTableExample.png" alt=""></p>
+<h4 id="iterating-through-all-dimensions-and-tables">Iterating Through All Dimensions and Tables</h4>
+<p><strong><em>Html Code:</em></strong></p>
+<pre><code>&lt;table border=&quot;1&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th ng-repeat=&quot;dim in layout.qHyperCube.qDimensionInfo&quot;&gt;{{dim.qFallbackTitle}}&lt;/td&gt;
+      &lt;th ng-repeat=&quot;mea in layout.qHyperCube.qMeasureInfo&quot; ng-bind=&quot;mea.qFallbackTitle&quot;&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr ng-repeat=&quot;row in layout.qHyperCube.qDataPages[0].qMatrix&quot;&gt;
+      &lt;td ng-repeat=&quot;col in row&quot;&gt;
+        {{col.qText}}
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+<p><strong><em>Result:</em></strong></p>
+<p><img src="img/DataBinding_DefaultWay_Example_IteratingThroughTablesDimensions.png" alt=""></p>
+<h4 id="getting-then-amount-of-rows">Getting then Amount of Rows</h4>
+<p><strong><em>Html Code:</em></strong></p>
+<pre><code>{{layout.qHyperCube.qDataPages[0].qMatrix.length}}</code></pre>
+<p><strong><em>Result:</em></strong></p>
+<p><img src="img/DataBinding_DefaultWay_Example_RowCount.png" alt=""></p>
+<h4 id="getting-headers">Getting Headers</h4>
+<p><strong><em>Html:</em></strong></p>
+<pre><code>&lt;div ng-repeat=&quot;row in layout.qHyperCube.qDimensionInfo&quot;&gt;
+    {{row.qFallbackTitle}}
+&lt;/div&gt;</code></pre>
+<p><strong><em>Result:</em></strong></p>
+<p><img src="img/DataBinding_DefaultWay_Example_GetDimensions.png" alt=""></p>
+<h4 id="accessing-column-definitions">Accessing Column Definitions</h4>
+<p><strong><em>Html:</em></strong></p>
+<pre><code>&lt;div ng-repeat=&quot;row in layout.qHyperCube.qMeasureInfo&quot;&gt;
+    &lt;b&gt;{{row.qFallbackTitle}}:&lt;/b&gt;&lt;br/&gt;
+    Min Value: {{row.qMin}}&lt;br/&gt;
+    Max Value: {{row.qMax}}&lt;br/&gt;&lt;br/&gt;
+&lt;/div&gt;</code></pre>
+<p><strong><em>Result:</em></strong></p>
+<p><img src="img/DataBinding_DefaultWay_Example_GetColumnInfo.png" alt=""></p>
+<h4 id="accessing-cells">Accessing Cells</h4>
+<p><strong><em>Html:</em></strong></p>
+<pre><code>&lt;b&gt;Number of Rows:&lt;/b&gt; {{layout.qHyperCube.qDataPages[0].qMatrix.length}}&lt;br/&gt;
+&lt;b&gt;Number of Columns:&lt;/b&gt; {{layout.qHyperCube.qDataPages[0].qMatrix[0].length}}&lt;br/&gt;&lt;br/&gt;
+
+&lt;b&gt;Value of 1st Row, 2nd Column:&lt;/b&gt; {{layout.qHyperCube.qDataPages[0].qMatrix[0][1].qText}}&lt;br/&gt;
+&lt;b&gt;Value of 5th Row, 2nd Column:&lt;/b&gt; {{layout.qHyperCube.qDataPages[0].qMatrix[4][3].qText}}</code></pre>
+<p><strong><em>Result:</em></strong></p>
+<p><img src="img/DataBinding_DefaultWay_Example_AccessingCells.png" alt=""></p>
+<h2 id="shorthand-notation">Shorthand - Notation</h2>
+<p>Since using the above described notation is quite erroneous, qWidget offers a shorthand notation to achieve the same result:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>wi.header(columnIndex)</code></td>
+<td>Retrieve a header-cell of the current Hypercube.<br/><br/><strong>Parameters:</strong><br/><code>columnIndex</code> - zero based column index of the desired header-cell<br/><br/><strong>Returns:</strong><br/> Either information about the dimension (<a href="http://betahelp.qliktech.com/0.90/en-US/portal/index.html#../Subsystems/QlikView_Client_Protocol_API/Content/GenericObject/LayoutLevel/Hypercube.htm">NxDimensionInfo</a>) or measure (<a href="http://betahelp.qliktech.com/0.90/en-US/portal/index.html#../Subsystems/QlikView_Client_Protocol_API/Content/GenericObject/LayoutLevel/Hypercube.htm">NxMeasureInfo</a>)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>wi.rows()</code></td>
+<td><strong>Returns</strong> an array of row-objects.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>wi.colHeaders()</code></td>
+<td><strong>Returns</strong> an array of header-objects (both dimensions and measures).</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>wi.row(rowIndex)</code></td>
+<td>Retrieve the row of the current Hypercube.<br/><br/> <strong>Parameters:</strong><br/> rowIndex - zero based index of the desired row.<br/><br/><strong>Returns:</strong><br/>Returns a row object.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>wi.cell(rowIndex, columnIndex)</code></td>
+<td>Retrieve a cell of the current Hypercube.<br/><br/> <strong>Parameters:</strong><br/> <code>rowIndex</code> - zero based row index of the desired cell <br/><code>columnIndex</code>: zero based column index of the desired cell<br/><br/><strong>Returns:</strong><br/>A cell of the current Hypercube (<a href="http://betahelp.qliktech.com/0.90/en-US/portal/index.html#../Subsystems/QlikView_Client_Protocol_API/Content/GenericObject/LayoutLevel/Hypercube.htm">NxCell</a>)          </td>
+</tr>
+<tr>
+<td style="text-align:left"><code>wi.tableEmpty()</code></td>
+<td><strong>Returns</strong> true if the current HyperCube is empty, otherwise false.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>wi.rowCount()</code></td>
+<td><strong>Returns</strong> the number of rows in the current HyperCube, if the HyperCube is not defined, <code>-1</code> will be returned.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>wi.colCount()</code></td>
+<td><strong>Returns</strong> the number of columns in the current HyperCube, if the HyperCube is not defined, <code>-1</code> is returned.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tips-and-tricks-working-with-the-shorthand-notation">Tips and Tricks Working with the Shorthand Notation</h3>
+<p>There is no need to read the above mentioned online documentation in detail when you are trying to find specific properties of a cell or a header.</p>
+<p>Just output (during development) the returned object of the above mentioned methods and you will immediately see all the available properties in the Preview area:</p>
+<p><strong><em>Html:</em></strong></p>
+<pre><code>&lt;!-- Get all available properties for cell(0,0) --&gt;
+{{wi.cell(0,0)}}    
+&lt;hr /&gt;
+
+&lt;!-- 
+Now we know that the property &quot;qText&quot; returns the 
+text-representation of the cell 
+--&gt;
+{{wi.cell(0,0).qText}}</code></pre>
+<p><strong><em>Result:</em></strong>
+<img src="img/DataBinding_Shorthand_Debug.png" alt=""></p>
+<h3 id="examples-with-the-shorthand-notation">Examples with the Shorthand Notation</h3>
+<h4 id="basic-calls">Basic Calls</h4>
+<p><strong><em>Data:</em></strong>
+The typical sample-dataset (Ctrl+0+0) is assumed.<br><em>Dimension:</em> <code>Dim1</code>  </p>
+<p><strong><em>Html:</em></strong></p>
+<pre><code>&lt;hr /&gt;
+&lt;b&gt;Retrieve a cell and its text:&lt;/b&gt;&lt;br/&gt;
+{{wi.cell(0,0).qText}}
+
+&lt;hr /&gt;
+&lt;b&gt;Retrieve a row:&lt;/b&gt;&lt;br/&gt;
+{{wi.row(0)}}
+
+&lt;hr /&gt;
+&lt;b&gt;Row count:&lt;/b&gt;&lt;br/&gt;
+{{wi.rowCount()}}
+
+&lt;hr /&gt;
+&lt;b&gt;Column count:&lt;/b&gt;&lt;br/&gt;
+{{wi.colCount()}}
+
+&lt;hr /&gt;
+&lt;b&gt;Table Empty:&lt;/b&gt;&lt;br/&gt;
+{{wi.tableEmpty()}}
+
+&lt;hr /&gt;
+&lt;b&gt;Iterating through rows:&lt;/b&gt;
+&lt;div ng-repeat=&quot;row in wi.rows()&quot;&gt;
+    {{row[0].qText}}
+&lt;/div&gt;</code></pre>
+<p><strong><em>Result:</em></strong></p>
+<p><img src="img/DataBinding_Shorthand_Examples.png" alt=""></p>
+<h4 id="iterating-through-dimensions-measures">Iterating through Dimensions &amp; Measures</h4>
+<pre><code>&lt;table border=&quot;1&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th ng-repeat=&quot;header in wi.colHeaders()&quot;&gt;
+                {{header.qFallbackTitle}}
+            &lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr ng-repeat=&quot;row in wi.rows()&quot;&gt;
+            &lt;td ng-repeat=&quot;col in row&quot;&gt;
+                {{col.qText}}
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">Copyright 2014 - Qlik/Stefan Walther</p>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript + other JS files
+================================================== -->
+<script src="assets/external/jquery/jquery.min.js"></script>
+<script src="assets/external/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/external/bootstrap/bootstrap.min.js"></script>
+<script src="assets/external/jquery.tocify/jquery.tocify.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56114350-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
