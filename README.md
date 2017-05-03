@@ -1,5 +1,7 @@
 # qwidget-documentation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/stefanwalther/qwidget-documentation.svg)](https://greenkeeper.io/)
+
 > Public help for qWidget (Limited Public Beta).
 
 ## About
